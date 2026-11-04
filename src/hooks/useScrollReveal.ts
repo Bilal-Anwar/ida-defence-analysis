@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 
 /** Progressive enhancement: content stays visible if animation is unavailable. */
-export function useScrollReveal() {
+export function useScrollReveal(enabled = true) {
   useEffect(() => {
+    if (!enabled) return;
     const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
     const animations = new Set<Animation>();
     let observer: IntersectionObserver | undefined;
@@ -49,5 +50,5 @@ export function useScrollReveal() {
       mutations?.disconnect();
       animations.forEach((animation) => animation.cancel());
     };
-  }, []);
+  }, [enabled]);
 }

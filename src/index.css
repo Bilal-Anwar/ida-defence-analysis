@@ -128,3 +128,69 @@
     scroll-behavior: auto !important;
   }
 }
+
+.startup-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(ellipse at center, #17261e 0%, #0b0f0e 65%);
+  overflow: hidden;
+  transition: opacity 400ms ease, visibility 400ms ease;
+}
+.startup-loader-exit { opacity: 0; visibility: hidden; }
+.startup-content-pending { height: 100svh; overflow: hidden; }
+.startup-content-pending .hero-image-enter,
+.startup-content-pending .hero-content-enter > * { animation-play-state: paused; }
+.startup-grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(#f9f53806 1px, transparent 1px), linear-gradient(90deg, #f9f53806 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse, #000, transparent 80%);
+  pointer-events: none;
+}
+.startup-radar { width: 240px; height: 240px; position: relative; display: grid; place-items: center; }
+.startup-radar-ring {
+  position: absolute;
+  inset: 0;
+  border: 1px solid #f9f53840;
+  border-radius: 50%;
+  background: repeating-radial-gradient(circle, transparent 0 38px, #f9f53815 39px 40px);
+}
+.startup-radar-ring::before, .startup-radar-ring::after { content: ''; position: absolute; background: #f9f53825; }
+.startup-radar-ring::before { top: 50%; left: -12px; right: -12px; height: 1px; }
+.startup-radar-ring::after { left: 50%; top: -12px; bottom: -12px; width: 1px; }
+.startup-radar-sweep {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, transparent 65%, #f9f53802 78%, #f9f53835 100%);
+  animation: radar-sweep 2.2s linear infinite;
+}
+.startup-logo {
+  position: relative;
+  z-index: 1;
+  width: 144px;
+  height: 144px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #0b0f0e;
+  box-shadow: 0 0 0 8px #0b0f0e, 0 0 42px #f9f53825;
+}
+.startup-loading-track { height: 2px; overflow: hidden; background: #f9f53820; }
+.startup-loading-track span { display: block; width: 45%; height: 100%; background: #f9f538; animation: briefing-load 1.2s ease-in-out infinite; }
+.startup-corner { position: absolute; width: 44px; height: 44px; border-color: #f9f53850; pointer-events: none; }
+.startup-corner-tl { top: 32px; left: 32px; border-left-width: 1px; border-top-width: 1px; }
+.startup-corner-br { bottom: 32px; right: 32px; border-right-width: 1px; border-bottom-width: 1px; }
+@keyframes radar-sweep { to { transform: rotate(360deg); } }
+@keyframes briefing-load { from { transform: translateX(-110%); } to { transform: translateX(330%); } }
+@media (max-width: 480px) {
+  .startup-radar { width: 208px; height: 208px; }
+  .startup-logo { width: 128px; height: 128px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .startup-loader { transition: none; }
+  .startup-radar-sweep, .startup-loading-track span { animation: none; }
+}

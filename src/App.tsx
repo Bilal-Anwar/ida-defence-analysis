@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { Header } from './components/layout/Header';
 import { HeroSection } from './components/hero/HeroSection';
 import { FeaturedNewsSection } from './components/editorial/FeaturedNewsSection';
@@ -23,9 +23,12 @@ import { MagazineEdition, IDA_MAGAZINES } from './data/magazines';
 import { InterviewItem } from './data/interviews';
 import { ServiceItem } from './data/services';
 import { useScrollReveal } from './hooks/useScrollReveal';
+import { StartupLoader } from './components/shared/StartupLoader';
 
 export default function App() {
-  useScrollReveal();
+  const [isStarting, setIsStarting] = useState(true);
+  const finishStartup = useCallback(() => setIsStarting(false), []);
+  useScrollReveal(!isStarting);
   // Modal states
   const [selectedArticle, setSelectedArticle] = useState<NewsArticle | null>(null);
   const [selectedMagazine, setSelectedMagazine] = useState<MagazineEdition | null>(null);
@@ -57,6 +60,8 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#0B0F0E] text-[#FFFFFF] font-['Inter'] selection:bg-brand-yellow selection:text-[#000000] relative">
+      {isStarting ? <StartupLoader onComplete={finishStartup} /> : null}
+      <div className={isStarting ? 'startup-content-pending' : ''} inert={isStarting} aria-hidden={isStarting || undefined}>
       <div className="reading-progress" aria-hidden="true" />
       {/* Global Header */}
       <Header
@@ -149,6 +154,7 @@ export default function App() {
         onSelectMagazine={setSelectedMagazine}
         onSelectInterview={setSelectedInterview}
       />
+      </div>
     </div>
   );
 }
