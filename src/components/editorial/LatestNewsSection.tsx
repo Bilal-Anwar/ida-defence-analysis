@@ -72,7 +72,7 @@ export const LatestNewsSection: React.FC<LatestNewsSectionProps> = ({
                   onClick={() => handleCategoryClick(cat)}
                   className={`px-3 py-1.5 rounded-lg text-xs font-['Plus_Jakarta_Sans'] font-semibold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
                     isActive
-                      ? 'bg-[#FFAF00] text-[#000000] shadow-sm font-bold'
+                      ? 'bg-brand-yellow text-[#000000] shadow-sm font-bold'
                       : 'text-[#A7ADA9] hover:text-white hover:bg-white/5'
                   }`}
                 >
@@ -100,7 +100,7 @@ export const LatestNewsSection: React.FC<LatestNewsSectionProps> = ({
               }
             }}
             onClick={() => onSelectArticle(leadArticle)}
-            className="lg:col-span-7 group rounded-2xl overflow-hidden bg-[#191E1B] border border-white/10 hover:border-[#FFAF00] transition-all duration-350 cursor-pointer flex flex-col justify-between shadow-xl"
+            className="lg:col-span-7 group rounded-2xl overflow-hidden bg-[#191E1B] border border-white/10 hover:border-brand-yellow transition-all duration-350 cursor-pointer flex flex-col justify-between shadow-xl"
           >
             <div className="relative aspect-[16/10] overflow-hidden bg-[#0B0F0E]">
               <TacticalImage
@@ -115,7 +115,7 @@ export const LatestNewsSection: React.FC<LatestNewsSectionProps> = ({
             <div className="p-6 sm:p-8 space-y-3 text-left">
               {/* Unboxed Metadata */}
               <div className="flex items-center gap-2 text-xs font-['Plus_Jakarta_Sans']">
-                <span className="font-bold text-[#FFAF00] uppercase tracking-wider">
+                <span className="font-bold text-brand-yellow uppercase tracking-wider">
                   {leadArticle.category}
                 </span>
                 <span className="text-white/40">·</span>
@@ -124,7 +124,7 @@ export const LatestNewsSection: React.FC<LatestNewsSectionProps> = ({
                 <span className="text-[#A7ADA9]">{leadArticle.readTime}</span>
               </div>
 
-              <h3 className="font-['Barlow_Condensed'] font-extrabold uppercase text-2xl sm:text-3xl text-white group-hover:text-[#FFAF00] transition-colors leading-tight">
+              <h3 className="font-['Barlow_Condensed'] font-extrabold uppercase text-2xl sm:text-3xl text-white group-hover:text-brand-yellow transition-colors leading-tight">
                 {leadArticle.title}
               </h3>
 
@@ -133,7 +133,7 @@ export const LatestNewsSection: React.FC<LatestNewsSectionProps> = ({
               </p>
 
               <div className="pt-4 border-t border-white/10 flex items-center justify-between">
-                <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#FFAF00] group-hover:text-white transition-colors">
+                <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-yellow group-hover:text-white transition-colors">
                   <span>Read Article Brief</span>
                   <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </span>
@@ -172,19 +172,19 @@ export const LatestNewsSection: React.FC<LatestNewsSectionProps> = ({
 
                 {/* Info */}
                 <div className="flex-1 min-w-0 space-y-1">
-                  <div className="flex items-center gap-2 text-[10px] font-['Plus_Jakarta_Sans'] font-bold text-[#FFAF00] uppercase tracking-wider">
+                  <div className="flex items-center gap-2 text-[10px] font-['Plus_Jakarta_Sans'] font-bold text-brand-yellow uppercase tracking-wider">
                     <span>{article.category}</span>
                     <span className="text-white/30">·</span>
                     <span className="text-[#A7ADA9] font-normal">{article.date}</span>
                   </div>
 
-                  <h4 className="font-['Barlow_Condensed'] font-bold uppercase text-base sm:text-lg text-white group-hover:text-[#FFAF00] transition-colors line-clamp-2 leading-snug">
+                  <h4 className="font-['Barlow_Condensed'] font-bold uppercase text-base sm:text-lg text-white group-hover:text-brand-yellow transition-colors line-clamp-2 leading-snug">
                     {article.title}
                   </h4>
 
                   <p className="text-xs leading-relaxed text-[#A7ADA9] line-clamp-2">{article.excerpt}</p>
 
-                  <span className="inline-flex items-center gap-1 text-[11px] font-medium text-[#A7ADA9] group-hover:text-[#FFAF00] transition-colors pt-0.5">
+                  <span className="inline-flex items-center gap-1 text-[11px] font-medium text-[#A7ADA9] group-hover:text-brand-yellow transition-colors pt-0.5">
                     <span>Read brief</span>
                     <ChevronRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                   </span>

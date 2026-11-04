@@ -33,7 +33,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
     return (
       <>
         {parts[0]}
-        <span className="font-['Instrument_Serif'] italic font-normal tracking-normal text-[#FFAF00] px-1 normal-case">
+        <span className="font-['Instrument_Serif'] italic font-normal tracking-normal text-brand-yellow px-1 normal-case">
           {accentWord}
         </span>
         {parts[1]}
@@ -45,8 +45,8 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
     <div className={`flex flex-col max-w-3xl ${alignClass} ${className}`}>
       {eyebrow && (
         <div className="flex items-center gap-2 mb-3">
-          <span className="inline-block w-4 h-[1px] bg-[#FFAF00]" />
-          <span className="font-['Plus_Jakarta_Sans'] font-bold text-[11px] tracking-[0.16em] text-[#FFAF00] uppercase">
+          <span className="inline-block w-4 h-[1px] bg-brand-yellow" />
+          <span className="font-['Plus_Jakarta_Sans'] font-bold text-[11px] tracking-[0.16em] text-brand-yellow uppercase">
             {eyebrow}
           </span>
         </div>

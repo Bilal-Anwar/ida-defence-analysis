@@ -23,7 +23,7 @@ export const AdvertisingSection: React.FC<AdvertisingSectionProps> = ({
           containerClassName="w-full h-full opacity-20"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F0E] via-[#0B0F0E]/95 to-[#0B0F0E]/80" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(255,175,0,0.12)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(249,245,56,0.12)_0%,transparent_60%)]" />
       </div>
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
@@ -31,14 +31,14 @@ export const AdvertisingSection: React.FC<AdvertisingSectionProps> = ({
           {/* Left Column: Headline, Copy, and CTAs (span 7) */}
           <div className="lg:col-span-7 space-y-6 text-left">
             <div className="flex items-center gap-2">
-              <span className="w-5 h-[1.5px] bg-[#FFAF00]" />
-              <span className="font-['Plus_Jakarta_Sans'] font-bold text-[11px] tracking-[0.16em] text-[#FFAF00] uppercase">
+              <span className="w-5 h-[1.5px] bg-brand-yellow" />
+              <span className="font-['Plus_Jakarta_Sans'] font-bold text-[11px] tracking-[0.16em] text-brand-yellow uppercase">
                 PARTNER WITH IDA
               </span>
             </div>
 
             <h2 className="font-['Barlow_Condensed'] font-extrabold uppercase text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[0.98] text-balance">
-              AMPLIFY YOUR PRESENCE IN THE <span className="text-[#FFAF00]">GLOBAL DEFENCE</span> INDUSTRY
+              AMPLIFY YOUR PRESENCE IN THE <span className="text-brand-yellow">GLOBAL DEFENCE</span> INDUSTRY
             </h2>
 
             <p className="font-['Inter'] text-sm sm:text-base text-[#D0D6D2] leading-relaxed max-w-xl">
@@ -57,7 +57,7 @@ export const AdvertisingSection: React.FC<AdvertisingSectionProps> = ({
               </div>
 
               <div>
-                <span className="font-['Barlow_Condensed'] font-extrabold text-2xl sm:text-3xl text-[#FFAF00] block">
+                <span className="font-['Barlow_Condensed'] font-extrabold text-2xl sm:text-3xl text-brand-yellow block">
                   45,000+
                 </span>
                 <span className="font-['Inter'] text-xs text-[#A7ADA9]">
@@ -99,15 +99,15 @@ export const AdvertisingSection: React.FC<AdvertisingSectionProps> = ({
 
           {/* Right Column: Premium Commercial Panel (span 5) */}
           <div className="lg:col-span-5">
-            <div className="p-8 rounded-2xl bg-[#191E1B]/90 backdrop-blur-md border border-[#FFAF00]/30 shadow-2xl space-y-6 text-left relative overflow-hidden">
+            <div className="p-8 rounded-2xl bg-[#191E1B]/90 backdrop-blur-md border border-brand-yellow/30 shadow-2xl space-y-6 text-left relative overflow-hidden">
               {/* Subtle top golden light line */}
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#FFAF00] to-transparent" />
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-brand-yellow to-transparent" />
 
               <div className="flex items-center justify-between pb-4 border-b border-white/10">
-                <span className="font-['Plus_Jakarta_Sans'] text-xs font-bold uppercase tracking-widest text-[#FFAF00]">
+                <span className="font-['Plus_Jakarta_Sans'] text-xs font-bold uppercase tracking-widest text-brand-yellow">
                   2026 MEDIA KIT & SPECIFICATIONS
                 </span>
-                <ShieldCheck className="w-4 h-4 text-[#FFAF00]" />
+                <ShieldCheck className="w-4 h-4 text-brand-yellow" />
               </div>
 
               <div className="space-y-4">
@@ -144,9 +144,9 @@ export const AdvertisingSection: React.FC<AdvertisingSectionProps> = ({
                 onClick={() => {
                   alert('Request received. Downloading IDA 2026 Media Kit and Rate Card.');
                 }}
-                className="w-full py-3 px-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#FFAF00] text-white font-['Plus_Jakarta_Sans'] font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all cursor-pointer"
+                className="w-full py-3 px-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand-yellow text-white font-['Plus_Jakarta_Sans'] font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all cursor-pointer"
               >
-                <Download className="w-4 h-4 text-[#FFAF00]" />
+                <Download className="w-4 h-4 text-brand-yellow" />
                 <span>Download IDA 2026 Media Kit (PDF)</span>
               </button>
             </div>

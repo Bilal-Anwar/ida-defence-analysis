@@ -47,7 +47,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
         <OfficialLogo />
         <button
           onClick={onClose}
-          className="p-2.5 rounded-full bg-white/5 border border-white/10 hover:border-[#FFAF00] text-[#A7ADA9] hover:text-[#FFAF00] transition-colors"
+          className="p-2.5 rounded-full bg-white/5 border border-white/10 hover:border-brand-yellow text-[#A7ADA9] hover:text-brand-yellow transition-colors"
           aria-label="Close mobile navigation"
         >
           <X className="w-6 h-6" />
@@ -61,13 +61,13 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
             onClose();
             onOpenSearch();
           }}
-          className="w-full flex items-center justify-between px-4 py-3 rounded-xl bg-[#191E1B] border border-white/10 text-left text-sm text-[#A7ADA9] hover:border-[#FFAF00] transition-colors"
+          className="w-full flex items-center justify-between px-4 py-3 rounded-xl bg-[#191E1B] border border-white/10 text-left text-sm text-[#A7ADA9] hover:border-brand-yellow transition-colors"
         >
           <div className="flex items-center gap-3">
-            <Search className="w-4 h-4 text-[#FFAF00]" />
+            <Search className="w-4 h-4 text-brand-yellow" />
             <span>Search articles, interviews, expos...</span>
           </div>
-          <span className="text-[10px] uppercase font-bold text-[#FFAF00]">Open</span>
+          <span className="text-[10px] uppercase font-bold text-brand-yellow">Open</span>
         </button>
       </div>
 
@@ -82,8 +82,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
           }}
           className={`flex items-center justify-between py-2.5 px-3 rounded-lg font-['Barlow_Condensed'] uppercase tracking-wider text-xl font-bold transition-all duration-200 ${
             activeItem.toUpperCase() === 'HOME'
-              ? 'text-[#FFAF00] bg-white/5 border-l-2 border-[#FFAF00]'
-              : 'text-white hover:text-[#FFAF00] hover:bg-white/[0.03]'
+              ? 'text-brand-yellow bg-white/5 border-l-2 border-brand-yellow'
+              : 'text-white hover:text-brand-yellow hover:bg-white/[0.03]'
           }`}
         >
           <span>HOME</span>
@@ -99,8 +99,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
           }}
           className={`flex items-center justify-between py-2.5 px-3 rounded-lg font-['Barlow_Condensed'] uppercase tracking-wider text-xl font-bold transition-all duration-200 ${
             activeItem.toUpperCase() === 'NEWS'
-              ? 'text-[#FFAF00] bg-white/5 border-l-2 border-[#FFAF00]'
-              : 'text-white hover:text-[#FFAF00] hover:bg-white/[0.03]'
+              ? 'text-brand-yellow bg-white/5 border-l-2 border-brand-yellow'
+              : 'text-white hover:text-brand-yellow hover:bg-white/[0.03]'
           }`}
         >
           <span>NEWS</span>
@@ -116,8 +116,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
           }}
           className={`flex items-center justify-between py-2.5 px-3 rounded-lg font-['Barlow_Condensed'] uppercase tracking-wider text-xl font-bold transition-all duration-200 ${
             activeItem.toUpperCase() === 'ARTICLES'
-              ? 'text-[#FFAF00] bg-white/5 border-l-2 border-[#FFAF00]'
-              : 'text-white hover:text-[#FFAF00] hover:bg-white/[0.03]'
+              ? 'text-brand-yellow bg-white/5 border-l-2 border-brand-yellow'
+              : 'text-white hover:text-brand-yellow hover:bg-white/[0.03]'
           }`}
         >
           <span>ARTICLES</span>
@@ -128,16 +128,16 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
         <div className="py-1">
           <button
             onClick={() => setMobileSectorsOpen((prev) => !prev)}
-            className="w-full flex items-center justify-between py-2.5 px-3 rounded-lg font-['Barlow_Condensed'] uppercase tracking-wider text-xl font-bold text-white hover:text-[#FFAF00] transition-colors"
+            className="w-full flex items-center justify-between py-2.5 px-3 rounded-lg font-['Barlow_Condensed'] uppercase tracking-wider text-xl font-bold text-white hover:text-brand-yellow transition-colors"
           >
             <div className="flex items-center gap-2">
               <span>DOMAIN</span>
-              <span className="text-[10px] font-['Plus_Jakarta_Sans'] px-1.5 py-0.5 rounded bg-white/10 text-[#FFAF00] font-bold">
+              <span className="text-[10px] font-['Plus_Jakarta_Sans'] px-1.5 py-0.5 rounded bg-white/10 text-brand-yellow font-bold">
                 4
               </span>
             </div>
             <ChevronDown
-              className={`w-4 h-4 text-[#FFAF00] transition-transform duration-200 ${
+              className={`w-4 h-4 text-brand-yellow transition-transform duration-200 ${
                 mobileSectorsOpen ? 'rotate-180' : ''
               }`}
             />
@@ -158,10 +158,10 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
                     onSelectNav(sub.cat);
                     onClose();
                   }}
-                  className="flex items-center justify-between py-2 px-2.5 rounded-md text-sm text-[#A7ADA9] hover:text-[#FFAF00] hover:bg-white/5 font-['Inter'] transition-colors"
+                  className="flex items-center justify-between py-2 px-2.5 rounded-md text-sm text-[#A7ADA9] hover:text-brand-yellow hover:bg-white/5 font-['Inter'] transition-colors"
                 >
                   <span>{sub.label}</span>
-                  <span className="text-[#FFAF00] text-xs">›</span>
+                  <span className="text-brand-yellow text-xs">›</span>
                 </a>
               ))}
             </div>
@@ -177,8 +177,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
           }}
           className={`flex items-center justify-between py-2.5 px-3 rounded-lg font-['Barlow_Condensed'] uppercase tracking-wider text-xl font-bold transition-all duration-200 ${
             activeItem.toUpperCase() === 'EXPOS'
-              ? 'text-[#FFAF00] bg-white/5 border-l-2 border-[#FFAF00]'
-              : 'text-white hover:text-[#FFAF00] hover:bg-white/[0.03]'
+              ? 'text-brand-yellow bg-white/5 border-l-2 border-brand-yellow'
+              : 'text-white hover:text-brand-yellow hover:bg-white/[0.03]'
           }`}
         >
           <span>EXPOS</span>
@@ -194,8 +194,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
           }}
           className={`flex items-center justify-between py-2.5 px-3 rounded-lg font-['Barlow_Condensed'] uppercase tracking-wider text-xl font-bold transition-all duration-200 ${
             activeItem.toUpperCase() === 'MAGAZINES'
-              ? 'text-[#FFAF00] bg-white/5 border-l-2 border-[#FFAF00]'
-              : 'text-white hover:text-[#FFAF00] hover:bg-white/[0.03]'
+              ? 'text-brand-yellow bg-white/5 border-l-2 border-brand-yellow'
+              : 'text-white hover:text-brand-yellow hover:bg-white/[0.03]'
           }`}
         >
           <span>MAGAZINES</span>
@@ -211,8 +211,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
           }}
           className={`flex items-center justify-between py-2.5 px-3 rounded-lg font-['Barlow_Condensed'] uppercase tracking-wider text-xl font-bold transition-all duration-200 ${
             activeItem.toUpperCase() === 'INTERVIEWS'
-              ? 'text-[#FFAF00] bg-white/5 border-l-2 border-[#FFAF00]'
-              : 'text-white hover:text-[#FFAF00] hover:bg-white/[0.03]'
+              ? 'text-brand-yellow bg-white/5 border-l-2 border-brand-yellow'
+              : 'text-white hover:text-brand-yellow hover:bg-white/[0.03]'
           }`}
         >
           <span>INTERVIEWS</span>
@@ -236,9 +236,9 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
         <div className="flex items-center justify-between text-xs text-[#A7ADA9] pt-2">
           <span>IDA Editorial Bureau</span>
           <div className="flex items-center gap-4">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFAF00]">LinkedIn</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFAF00]">X (Twitter)</a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFAF00]">YouTube</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow">X (Twitter)</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow">YouTube</a>
           </div>
         </div>
       </div>

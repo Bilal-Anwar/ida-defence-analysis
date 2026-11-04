@@ -41,19 +41,19 @@ export const MagazineViewerModal: React.FC<MagazineViewerModalProps> = ({ magazi
       <div id="magazine-reader" role="dialog" aria-modal="true" aria-labelledby="magazine-title" className="w-full max-w-5xl max-h-[92vh] bg-[#121715] border border-white/20 rounded-2xl shadow-2xl flex flex-col overflow-hidden text-left" onClick={(event) => event.stopPropagation()}>
         <div className="flex items-center justify-between gap-4 px-6 py-4 border-b border-white/10 bg-[#0B0F0E]">
           <div className="flex items-center gap-3">
-            <BookOpen className="w-5 h-5 text-[#FFAF00] shrink-0" />
+            <BookOpen className="w-5 h-5 text-brand-yellow shrink-0" />
             <div>
-              <p className="text-xs text-[#FFAF00] uppercase tracking-widest">{magazine.edition}</p>
+              <p className="text-xs text-brand-yellow uppercase tracking-widest">{magazine.edition}</p>
               <h2 id="magazine-title" className="font-['Barlow_Condensed'] font-bold text-xl text-white uppercase">{magazine.title}</h2>
             </div>
           </div>
-          <button type="button" onClick={onClose} aria-label="Close modal" className="p-2 rounded-full text-white hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-[#FFAF00]"><X className="w-5 h-5" /></button>
+          <button type="button" onClick={onClose} aria-label="Close modal" className="p-2 rounded-full text-white hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-brand-yellow"><X className="w-5 h-5" /></button>
         </div>
         <div className="overflow-y-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           <img src={magazine.coverImage} alt={`${magazine.title} — ${magazine.edition} cover`} width={1518} height={1958} className="w-full h-auto rounded-lg border border-white/10" />
           <div className="space-y-6">
             <div>
-              <p className="text-xs font-bold text-[#FFAF00] tracking-wider uppercase mb-2">{magazine.category}</p>
+              <p className="text-xs font-bold text-brand-yellow tracking-wider uppercase mb-2">{magazine.category}</p>
               <h3 className="font-['Barlow_Condensed'] text-3xl font-bold text-white mb-4">{magazine.subtitle}</h3>
               <p className="text-sm text-[#D0D6D2] leading-relaxed">{magazine.summary}</p>
             </div>
@@ -67,7 +67,7 @@ export const MagazineViewerModal: React.FC<MagazineViewerModalProps> = ({ magazi
                 <ul className="list-disc pl-4 space-y-2 text-sm text-[#A7ADA9]">{magazine.keyInterviews.map((interview) => <li key={interview}>{interview}</li>)}</ul>
               </div>
             )}
-            <a href={magazine.coverImage} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[#FFAF00] px-5 py-3 text-black font-bold text-xs uppercase focus-visible:outline-2 focus-visible:outline-white">View Full Cover <ExternalLink className="w-4 h-4" /></a>
+            <a href={magazine.coverImage} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-brand-yellow px-5 py-3 text-black font-bold text-xs uppercase focus-visible:outline-2 focus-visible:outline-white">View Full Cover <ExternalLink className="w-4 h-4" /></a>
           </div>
         </div>
       </div>

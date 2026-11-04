@@ -29,7 +29,7 @@ export const OfficialLogo: React.FC<OfficialLogoProps> = ({
         <img
           src="/assets/aistudio/image_cd546ea9.png"
           alt="International Defence Analysis Official Logo"
-          className={`${sizeClasses} object-contain rounded-full shadow-[0_0_20px_rgba(255,175,0,0.25)] transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_0_25px_rgba(255,175,0,0.45)]`}
+          className={`${sizeClasses} object-contain rounded-full shadow-[0_0_20px_rgba(249,245,56,0.25)] transition-all duration-300 group-hover:scale-105 group-hover:shadow-[0_0_25px_rgba(249,245,56,0.45)]`}
         />
       </div>
 
@@ -40,7 +40,7 @@ export const OfficialLogo: React.FC<OfficialLogoProps> = ({
             <span className="font-['Barlow_Condensed'] font-extrabold text-lg sm:text-xl tracking-wider text-white uppercase group-hover:text-white transition-colors">
               DEFENCE
             </span>
-            <span className="font-['Barlow_Condensed'] font-black text-lg sm:text-xl tracking-wider text-[#FFAF00] uppercase">
+            <span className="font-['Barlow_Condensed'] font-black text-lg sm:text-xl tracking-wider text-brand-yellow uppercase">
               IDA
             </span>
           </div>

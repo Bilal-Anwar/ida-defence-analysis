@@ -42,7 +42,7 @@ export const NewsletterSection: React.FC = () => {
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         <div className="max-w-4xl mx-auto rounded-3xl bg-[#191E1B] border border-white/10 p-8 sm:p-12 lg:p-16 text-center space-y-6 relative shadow-2xl">
           {/* Subtle top golden line */}
-          <div className="absolute top-0 left-1/4 right-1/4 h-[2px] bg-gradient-to-r from-transparent via-[#FFAF00] to-transparent" />
+          <div className="absolute top-0 left-1/4 right-1/4 h-[2px] bg-gradient-to-r from-transparent via-brand-yellow to-transparent" />
 
           {/* Section Heading */}
           <SectionHeading
@@ -55,8 +55,8 @@ export const NewsletterSection: React.FC = () => {
 
           {subscribed ? (
             /* Honest Success State */
-            <div className="py-6 px-4 rounded-2xl bg-[#0B0F0E] border border-[#FFAF00]/40 max-w-lg mx-auto space-y-3">
-              <div className="w-12 h-12 rounded-full bg-[#FFAF00]/20 flex items-center justify-center mx-auto text-[#FFAF00]">
+            <div className="py-6 px-4 rounded-2xl bg-[#0B0F0E] border border-brand-yellow/40 max-w-lg mx-auto space-y-3">
+              <div className="w-12 h-12 rounded-full bg-brand-yellow/20 flex items-center justify-center mx-auto text-brand-yellow">
                 <CheckCircle2 className="w-6 h-6" />
               </div>
               <h4 className="font-['Barlow_Condensed'] font-bold uppercase text-xl text-white">
@@ -70,7 +70,7 @@ export const NewsletterSection: React.FC = () => {
                   setSubscribed(false);
                   setEmail('');
                 }}
-                className="text-xs text-[#FFAF00] hover:underline uppercase font-bold tracking-wider pt-2"
+                className="text-xs text-brand-yellow hover:underline uppercase font-bold tracking-wider pt-2"
               >
                 Subscribe another email
               </button>
@@ -80,7 +80,7 @@ export const NewsletterSection: React.FC = () => {
             <form onSubmit={handleSubscribe} noValidate className="max-w-lg mx-auto space-y-3 pt-2">
               <div className="flex flex-col sm:flex-row items-center gap-3">
                 <div className="relative w-full">
-                  <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[#FFAF00]" />
+                  <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-brand-yellow" />
                   <input
                     type="email"
                     value={email}
@@ -90,7 +90,7 @@ export const NewsletterSection: React.FC = () => {
                     }}
                     placeholder="Enter corporate or military email..."
                     className={`w-full pl-11 pr-4 py-3.5 rounded-full bg-[#0B0F0E] border text-white text-sm placeholder-[#A7ADA9]/50 focus:outline-none transition-colors ${
-                      error ? 'border-red-500' : 'border-white/15 focus:border-[#FFAF00]'
+                      error ? 'border-red-500' : 'border-white/15 focus:border-brand-yellow'
                     }`}
                   />
                 </div>

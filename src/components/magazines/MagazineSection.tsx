@@ -46,14 +46,14 @@ export const MagazineSection: React.FC<MagazineSectionProps> = ({ onViewMagazine
           <div className="shrink-0 flex items-center gap-3">
             <button
               onClick={handlePrev}
-              className="w-12 h-12 rounded-full border border-white/15 bg-[#191E1B] hover:border-[#FFAF00] hover:bg-[#FFAF00] hover:text-black text-white flex items-center justify-center transition-all duration-200 cursor-pointer shadow-md"
+              className="w-12 h-12 rounded-full border border-white/15 bg-[#191E1B] hover:border-brand-yellow hover:bg-brand-yellow hover:text-black text-white flex items-center justify-center transition-all duration-200 cursor-pointer shadow-md"
               aria-label="Previous magazine edition"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={handleNext}
-              className="w-12 h-12 rounded-full border border-white/15 bg-[#191E1B] hover:border-[#FFAF00] hover:bg-[#FFAF00] hover:text-black text-white flex items-center justify-center transition-all duration-200 cursor-pointer shadow-md"
+              className="w-12 h-12 rounded-full border border-white/15 bg-[#191E1B] hover:border-brand-yellow hover:bg-brand-yellow hover:text-black text-white flex items-center justify-center transition-all duration-200 cursor-pointer shadow-md"
               aria-label="Next magazine edition"
             >
               <ChevronRight className="w-5 h-5" />

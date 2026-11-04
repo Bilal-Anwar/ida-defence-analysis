@@ -32,13 +32,13 @@ export const InterviewsSection: React.FC<InterviewsSectionProps> = ({ onReadInte
             description="Conversations with the visionaries, executives, and military leaders shaping the international defence landscape."
           />
           <div className="flex items-center gap-3 shrink-0">
-            <a href="https://defenceida.com/category/interviews/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-bold text-[#FFAF00] hover:text-white">
+            <a href="https://defenceida.com/category/interviews/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-bold text-brand-yellow hover:text-white">
               All interviews <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
-            <button type="button" onClick={() => scrollInterviews(-1)} aria-label="Previous interview" aria-controls="interview-track" className="p-2 rounded-full border border-white/15 text-white hover:border-[#FFAF00] hover:text-[#FFAF00]">
+            <button type="button" onClick={() => scrollInterviews(-1)} aria-label="Previous interview" aria-controls="interview-track" className="p-2 rounded-full border border-white/15 text-white hover:border-brand-yellow hover:text-brand-yellow">
               <ChevronLeft className="w-5 h-5" />
             </button>
-            <button type="button" onClick={() => scrollInterviews(1)} aria-label="Next interview" aria-controls="interview-track" className="p-2 rounded-full border border-white/15 text-white hover:border-[#FFAF00] hover:text-[#FFAF00]">
+            <button type="button" onClick={() => scrollInterviews(1)} aria-label="Next interview" aria-controls="interview-track" className="p-2 rounded-full border border-white/15 text-white hover:border-brand-yellow hover:text-brand-yellow">
               <ChevronRight className="w-5 h-5" />
             </button>
           </div>

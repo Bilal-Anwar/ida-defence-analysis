@@ -38,11 +38,11 @@ export const TacticalImage: React.FC<TacticalImageProps> = ({
       {(hasError || !src) && (
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-[#191E1B] via-[#121715] to-[#0B0F0E] p-6 text-center">
           <div className="relative mb-3 flex items-center justify-center">
-            <div className="w-16 h-16 rounded-full border border-[#FFAF00]/30 flex items-center justify-center bg-[#222824]/50 relative">
-              <Crosshair className="w-8 h-8 text-[#FFAF00]/70 animate-pulse" />
+            <div className="w-16 h-16 rounded-full border border-brand-yellow/30 flex items-center justify-center bg-[#222824]/50 relative">
+              <Crosshair className="w-8 h-8 text-brand-yellow/70 animate-pulse" />
               <div className="absolute inset-0 border border-white/10 rounded-full animate-ping opacity-25" />
             </div>
-            <Radio className="absolute -top-1 -right-1 w-4 h-4 text-[#FFAF00]" />
+            <Radio className="absolute -top-1 -right-1 w-4 h-4 text-brand-yellow" />
           </div>
           <span className="font-['Barlow_Condensed'] uppercase tracking-wider text-sm font-bold text-white/90">
             {alt}
@@ -60,8 +60,8 @@ export const TacticalImage: React.FC<TacticalImageProps> = ({
 
       {/* Optional Tactical Label Badge */}
       {tacticalBadge && (
-        <div className="absolute top-3 left-3 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-sm bg-[#0B0F0E]/80 backdrop-blur-md border border-white/10 text-[10px] font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-[#FFAF00]">
-          <Shield className="w-3 h-3 text-[#FFAF00]" />
+        <div className="absolute top-3 left-3 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-sm bg-[#0B0F0E]/80 backdrop-blur-md border border-white/10 text-[10px] font-['Plus_Jakarta_Sans'] font-bold uppercase tracking-wider text-brand-yellow">
+          <Shield className="w-3 h-3 text-brand-yellow" />
           <span>{tacticalBadge}</span>
         </div>
       )}

@@ -116,7 +116,7 @@ export const ContactSection: React.FC = () => {
             <div className="grid gap-4 lg:flex-1 lg:auto-rows-fr">
               <div className="p-4 rounded-xl bg-[#191E1B] border border-white/10 flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
-                  <Mail className="w-5 h-5 text-[#FFAF00]" />
+                  <Mail className="w-5 h-5 text-brand-yellow" />
                 </div>
                 <div className="space-y-0.5">
                   <span className="font-['Barlow_Condensed'] font-bold text-white text-base block uppercase">
@@ -124,7 +124,7 @@ export const ContactSection: React.FC = () => {
                   </span>
                   <a
                     href="mailto:editor@defenceida.com"
-                    className="font-['Inter'] text-xs sm:text-sm text-[#FFAF00] hover:underline"
+                    className="font-['Inter'] text-xs sm:text-sm text-brand-yellow hover:underline"
                   >
                     editor@defenceida.com
                   </a>
@@ -134,7 +134,7 @@ export const ContactSection: React.FC = () => {
 
               <div className="p-4 rounded-xl bg-[#191E1B] border border-white/10 flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
-                  <ShieldCheck className="w-5 h-5 text-[#FFAF00]" />
+                  <ShieldCheck className="w-5 h-5 text-brand-yellow" />
                 </div>
                 <div className="space-y-0.5">
                   <span className="font-['Barlow_Condensed'] font-bold text-white text-base block uppercase">
@@ -142,7 +142,7 @@ export const ContactSection: React.FC = () => {
                   </span>
                   <a
                     href="mailto:partnerships@defenceida.com"
-                    className="font-['Inter'] text-xs sm:text-sm text-[#FFAF00] hover:underline"
+                    className="font-['Inter'] text-xs sm:text-sm text-brand-yellow hover:underline"
                   >
                     partnerships@defenceida.com
                   </a>
@@ -152,7 +152,7 @@ export const ContactSection: React.FC = () => {
 
               <div className="p-4 rounded-xl bg-[#191E1B] border border-white/10 flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
-                  <MapPin className="w-5 h-5 text-[#FFAF00]" />
+                  <MapPin className="w-5 h-5 text-brand-yellow" />
                 </div>
                 <div className="space-y-0.5">
                   <span className="font-['Barlow_Condensed'] font-bold text-white text-base block uppercase">
@@ -166,7 +166,7 @@ export const ContactSection: React.FC = () => {
             </div>
 
             <div className="p-4 rounded-xl bg-[#1F4941]/20 border border-[#1F4941]/40 text-xs text-[#A7ADA9]">
-              <span className="font-bold text-[#FFAF00] block mb-1 uppercase tracking-wide">
+              <span className="font-bold text-brand-yellow block mb-1 uppercase tracking-wide">
                 Secure Source Disclosure Policy
               </span>
               We respect Chatham House rules and journalistic source confidentiality for intelligence attachés and defence engineers.
@@ -179,14 +179,14 @@ export const ContactSection: React.FC = () => {
               {submissionResult?.success ? (
                 /* Honest Demonstration Submission State */
                 <div className="py-8 text-center space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-[#FFAF00]/20 border border-[#FFAF00] flex items-center justify-center mx-auto">
-                    <CheckCircle className="w-8 h-8 text-[#FFAF00]" />
+                  <div className="w-16 h-16 rounded-full bg-brand-yellow/20 border border-brand-yellow flex items-center justify-center mx-auto">
+                    <CheckCircle className="w-8 h-8 text-brand-yellow" />
                   </div>
                   <h3 className="font-['Barlow_Condensed'] font-extrabold uppercase text-2xl text-white">
                     Inquiry Transmitted Successfully
                   </h3>
                   <p className="font-['Inter'] text-sm text-[#D0D6D2] max-w-md mx-auto leading-relaxed">
-                    Thank you, <strong className="text-white">{submissionResult.data?.fullName}</strong>. Your inquiry regarding <strong className="text-[#FFAF00]">"{submissionResult.data?.subject}"</strong> has been recorded in our editorial dispatch queue.
+                    Thank you, <strong className="text-white">{submissionResult.data?.fullName}</strong>. Your inquiry regarding <strong className="text-brand-yellow">"{submissionResult.data?.subject}"</strong> has been recorded in our editorial dispatch queue.
                   </p>
 
                   <div className="p-4 rounded-xl bg-[#222824] border border-white/10 max-w-md mx-auto text-left text-xs space-y-1.5 text-[#A7ADA9]">
@@ -212,7 +212,7 @@ export const ContactSection: React.FC = () => {
                     {/* Full Name */}
                     <div className="space-y-1.5">
                       <label className="font-['Plus_Jakarta_Sans'] text-xs font-bold text-white uppercase tracking-wider block">
-                        Full Name <span className="text-[#FFAF00]">*</span>
+                        Full Name <span className="text-brand-yellow">*</span>
                       </label>
                       <input
                         type="text"
@@ -222,7 +222,7 @@ export const ContactSection: React.FC = () => {
                         className={`w-full px-4 py-3 rounded-xl bg-[#121715] border text-white text-sm placeholder-[#A7ADA9]/50 focus:outline-none transition-colors ${
                           errors.fullName
                             ? 'border-red-500/80 focus:border-red-500'
-                            : 'border-white/10 focus:border-[#FFAF00]'
+                            : 'border-white/10 focus:border-brand-yellow'
                         }`}
                       />
                       {errors.fullName && (
@@ -235,7 +235,7 @@ export const ContactSection: React.FC = () => {
                     {/* Email */}
                     <div className="space-y-1.5">
                       <label className="font-['Plus_Jakarta_Sans'] text-xs font-bold text-white uppercase tracking-wider block">
-                        Institutional Email <span className="text-[#FFAF00]">*</span>
+                        Institutional Email <span className="text-brand-yellow">*</span>
                       </label>
                       <input
                         type="email"
@@ -245,7 +245,7 @@ export const ContactSection: React.FC = () => {
                         className={`w-full px-4 py-3 rounded-xl bg-[#121715] border text-white text-sm placeholder-[#A7ADA9]/50 focus:outline-none transition-colors ${
                           errors.email
                             ? 'border-red-500/80 focus:border-red-500'
-                            : 'border-white/10 focus:border-[#FFAF00]'
+                            : 'border-white/10 focus:border-brand-yellow'
                         }`}
                       />
                       {errors.email && (
@@ -260,7 +260,7 @@ export const ContactSection: React.FC = () => {
                     {/* Company / Organization */}
                     <div className="space-y-1.5">
                       <label className="font-['Plus_Jakarta_Sans'] text-xs font-bold text-white uppercase tracking-wider block">
-                        Organization / Navy / Force <span className="text-[#FFAF00]">*</span>
+                        Organization / Navy / Force <span className="text-brand-yellow">*</span>
                       </label>
                       <input
                         type="text"
@@ -270,7 +270,7 @@ export const ContactSection: React.FC = () => {
                         className={`w-full px-4 py-3 rounded-xl bg-[#121715] border text-white text-sm placeholder-[#A7ADA9]/50 focus:outline-none transition-colors ${
                           errors.organization
                             ? 'border-red-500/80 focus:border-red-500'
-                            : 'border-white/10 focus:border-[#FFAF00]'
+                            : 'border-white/10 focus:border-brand-yellow'
                         }`}
                       />
                       {errors.organization && (
@@ -283,7 +283,7 @@ export const ContactSection: React.FC = () => {
                     {/* Subject */}
                     <div className="space-y-1.5">
                       <label className="font-['Plus_Jakarta_Sans'] text-xs font-bold text-white uppercase tracking-wider block">
-                        Subject / Inquiry Type <span className="text-[#FFAF00]">*</span>
+                        Subject / Inquiry Type <span className="text-brand-yellow">*</span>
                       </label>
                       <select
                         value={formData.subject}
@@ -291,7 +291,7 @@ export const ContactSection: React.FC = () => {
                         className={`w-full px-4 py-3 rounded-xl bg-[#121715] border text-white text-sm focus:outline-none transition-colors ${
                           errors.subject
                             ? 'border-red-500/80 focus:border-red-500'
-                            : 'border-white/10 focus:border-[#FFAF00]'
+                            : 'border-white/10 focus:border-brand-yellow'
                         }`}
                       >
                         <option value="">Select subject matter</option>
@@ -312,7 +312,7 @@ export const ContactSection: React.FC = () => {
                   {/* Message */}
                   <div className="space-y-1.5">
                     <label className="font-['Plus_Jakarta_Sans'] text-xs font-bold text-white uppercase tracking-wider block">
-                      Inquiry Details <span className="text-[#FFAF00]">*</span>
+                      Inquiry Details <span className="text-brand-yellow">*</span>
                     </label>
                     <textarea
                       rows={4}
@@ -322,7 +322,7 @@ export const ContactSection: React.FC = () => {
                       className={`w-full px-4 py-3 rounded-xl bg-[#121715] border text-white text-sm placeholder-[#A7ADA9]/50 focus:outline-none transition-colors resize-none ${
                         errors.message
                           ? 'border-red-500/80 focus:border-red-500'
-                          : 'border-white/10 focus:border-[#FFAF00]'
+                          : 'border-white/10 focus:border-brand-yellow'
                       }`}
                     />
                     {errors.message && (

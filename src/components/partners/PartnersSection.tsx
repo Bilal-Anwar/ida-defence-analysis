@@ -31,7 +31,7 @@ export const PartnersSection: React.FC = () => {
           </div>
           {!prefersReduced && (
             <div className="flex justify-center mt-8">
-              <button type="button" aria-label={isPaused ? 'Play partner carousel' : 'Pause partner carousel'} aria-pressed={isPaused} className="w-10 h-10 rounded-full border border-white/15 text-white flex items-center justify-center hover:border-[#FFAF00] hover:text-[#FFAF00] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FFAF00] transition-colors" onClick={() => setIsPaused((paused) => !paused)}>
+              <button type="button" aria-label={isPaused ? 'Play partner carousel' : 'Pause partner carousel'} aria-pressed={isPaused} className="w-10 h-10 rounded-full border border-white/15 text-white flex items-center justify-center hover:border-brand-yellow hover:text-brand-yellow focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-yellow transition-colors" onClick={() => setIsPaused((paused) => !paused)}>
                 {isPaused ? <Play className="w-3.5 h-3.5" /> : <Pause className="w-3.5 h-3.5" />}
               </button>
             </div>

@@ -9,7 +9,7 @@ interface HeroGlassCardProps {
 export const HeroGlassCard: React.FC<HeroGlassCardProps> = ({ className = '', onExplore }) => {
   return (
     <div
-      className={`liquid-glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(255,175,0,0.12)] border border-white/10 ${className}`}
+      className={`liquid-glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(249,245,56,0.12)] border border-white/10 ${className}`}
       style={{
         width: '100%',
         maxWidth: '320px',
@@ -18,16 +18,16 @@ export const HeroGlassCard: React.FC<HeroGlassCardProps> = ({ className = '', on
     >
       {/* Top row */}
       <div className="flex items-center justify-between text-xs">
-        <span className="font-['Plus_Jakarta_Sans'] font-bold text-[10px] tracking-[0.18em] text-[#FFAF00] uppercase">
+        <span className="font-['Plus_Jakarta_Sans'] font-bold text-[10px] tracking-[0.18em] text-brand-yellow uppercase">
           [ INTERNATIONAL COVERAGE ]
         </span>
-        <div className="w-2 h-2 rounded-full bg-[#FFAF00] animate-pulse" />
+        <div className="w-2 h-2 rounded-full bg-brand-yellow animate-pulse" />
       </div>
 
       {/* Main heading with Instrument Serif Italic for "Intelligence" */}
       <div className="my-4">
         <h3 className="font-['Inter'] font-extrabold text-xl sm:text-2xl text-white leading-tight">
-          <span className="font-['Instrument_Serif'] italic font-normal text-[#FFAF00] text-2xl sm:text-3xl block mb-0.5">
+          <span className="font-['Instrument_Serif'] italic font-normal text-brand-yellow text-2xl sm:text-3xl block mb-0.5">
             Intelligence
           </span>
           Beyond Headlines
@@ -45,7 +45,7 @@ export const HeroGlassCard: React.FC<HeroGlassCardProps> = ({ className = '', on
         </span>
         <button
           onClick={onExplore}
-          className="inline-flex items-center gap-1 text-[#FFAF00] hover:text-white font-semibold transition-colors group cursor-pointer"
+          className="inline-flex items-center gap-1 text-brand-yellow hover:text-white font-semibold transition-colors group cursor-pointer"
         >
           <span>Briefings</span>
           <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

@@ -46,7 +46,7 @@ export const ArticleModal: React.FC<ArticleModalProps> = ({ article, onClose }) 
         {/* Header Bar */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-[#0B0F0E]/80 backdrop-blur-md">
           <div className="flex items-center gap-3">
-            <span className="font-['Plus_Jakarta_Sans'] font-bold text-xs uppercase tracking-widest text-[#FFAF00]">
+            <span className="font-['Plus_Jakarta_Sans'] font-bold text-xs uppercase tracking-widest text-brand-yellow">
               {article.category}
             </span>
             <span className="text-white/30">/</span>
@@ -62,7 +62,7 @@ export const ArticleModal: React.FC<ArticleModalProps> = ({ article, onClose }) 
               title="Copy Article Link"
               aria-label="Share Article"
             >
-              {copied ? <Check className="w-4 h-4 text-[#FFAF00]" /> : <Share2 className="w-4 h-4" />}
+              {copied ? <Check className="w-4 h-4 text-brand-yellow" /> : <Share2 className="w-4 h-4" />}
             </button>
             <button
               onClick={onClose}
@@ -84,17 +84,17 @@ export const ArticleModal: React.FC<ArticleModalProps> = ({ article, onClose }) 
           {/* Metadata bar */}
           <div className="flex flex-wrap items-center gap-4 text-xs text-[#A7ADA9] border-y border-white/10 py-3">
             <div className="flex items-center gap-1.5 text-white">
-              <Shield className="w-3.5 h-3.5 text-[#FFAF00]" />
+              <Shield className="w-3.5 h-3.5 text-brand-yellow" />
               <span>By {article.author}</span>
             </div>
             <span>·</span>
             <div className="flex items-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5 text-[#FFAF00]" />
+              <MapPin className="w-3.5 h-3.5 text-brand-yellow" />
               <span>{article.location}</span>
             </div>
             <span>·</span>
             <div className="flex items-center gap-1.5">
-              <Clock className="w-3.5 h-3.5 text-[#FFAF00]" />
+              <Clock className="w-3.5 h-3.5 text-brand-yellow" />
               <span>{article.readTime}</span>
             </div>
           </div>
@@ -110,8 +110,8 @@ export const ArticleModal: React.FC<ArticleModalProps> = ({ article, onClose }) 
           </div>
 
           {/* Summary Callout */}
-          <div className="p-4 rounded-xl bg-[#191E1B] border-l-2 border-[#FFAF00] text-[#FFFFFF] font-['Inter'] text-sm sm:text-base leading-relaxed">
-            <p className="font-semibold text-[#FFAF00] text-xs uppercase tracking-wider mb-1">
+          <div className="p-4 rounded-xl bg-[#191E1B] border-l-2 border-brand-yellow text-[#FFFFFF] font-['Inter'] text-sm sm:text-base leading-relaxed">
+            <p className="font-semibold text-brand-yellow text-xs uppercase tracking-wider mb-1">
               {article.sourceUrl ? 'Article Brief' : 'Executive Briefing'}
             </p>
             {article.content.summary}
@@ -128,7 +128,7 @@ export const ArticleModal: React.FC<ArticleModalProps> = ({ article, onClose }) 
           {article.content.technicalBrief && article.content.technicalBrief.length > 0 && (
             <div className="mt-8 rounded-xl bg-[#191E1B] border border-white/10 p-5">
               <h3 className="font-['Barlow_Condensed'] font-bold uppercase text-lg text-white mb-3 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-[#FFAF00]" />
+                <span className="w-2 h-2 rounded-full bg-brand-yellow" />
                 Technical & Operational Parameters
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
@@ -144,13 +144,13 @@ export const ArticleModal: React.FC<ArticleModalProps> = ({ article, onClose }) 
 
           {/* Intel Takeaway */}
           {article.content.intelTakeaway && <div className="p-4 rounded-xl bg-[#1F4941]/30 border border-[#1F4941] text-xs sm:text-sm">
-            <span className="font-bold text-[#FFAF00] uppercase tracking-wider block mb-1">
+            <span className="font-bold text-brand-yellow uppercase tracking-wider block mb-1">
               Strategic Intelligence Takeaway
             </span>
             <p className="text-white/90">{article.content.intelTakeaway}</p>
           </div>}
           {article.sourceUrl && (
-            <a href={article.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-full bg-[#FFAF00] px-5 py-3 text-xs font-bold uppercase text-black hover:bg-[#ffc34d]">
+            <a href={article.sourceUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-full bg-brand-yellow px-5 py-3 text-xs font-bold uppercase text-black hover:bg-brand-yellow-hover">
               Read full article on defenceida.com ↗
             </a>
           )}

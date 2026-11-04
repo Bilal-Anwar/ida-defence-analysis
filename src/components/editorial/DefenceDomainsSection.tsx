@@ -26,7 +26,7 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
           {/* Card 1: LAND WARFARE */}
           <div
             onClick={() => onSelectDomain('LAND')}
-            className="group relative aspect-[16/10] rounded-2xl overflow-hidden bg-[#191E1B] border border-white/10 hover:border-[#FFAF00] transition-all duration-400 cursor-pointer shadow-xl flex flex-col justify-end"
+            className="group relative aspect-[16/10] rounded-2xl overflow-hidden bg-[#191E1B] border border-white/10 hover:border-brand-yellow transition-all duration-400 cursor-pointer shadow-xl flex flex-col justify-end"
           >
             {/* Background Image: Armored advance across rugged mountains */}
             <div className="absolute inset-0 overflow-hidden">
@@ -40,7 +40,7 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
             </div>
 
             {/* Corner Badge */}
-            <div className="absolute top-5 left-5 z-10 flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B0F0E]/80 backdrop-blur-md border border-white/10 text-xs font-['Plus_Jakarta_Sans'] font-bold text-[#FFAF00]">
+            <div className="absolute top-5 left-5 z-10 flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B0F0E]/80 backdrop-blur-md border border-white/10 text-xs font-['Plus_Jakarta_Sans'] font-bold text-brand-yellow">
               <Shield className="w-3.5 h-3.5" />
               <span>THEATRE OF OPERATIONS</span>
             </div>
@@ -48,10 +48,10 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
             {/* Bottom-left Category Title and Golden Arrow */}
             <div className="relative z-10 p-6 sm:p-7 flex items-end justify-between">
               <div className="space-y-1">
-                <span className="font-['Plus_Jakarta_Sans'] text-xs font-bold uppercase tracking-widest text-[#FFAF00] block">
+                <span className="font-['Plus_Jakarta_Sans'] text-xs font-bold uppercase tracking-widest text-brand-yellow block">
                   Ground Forces & Armor
                 </span>
-                <h3 className="font-['Barlow_Condensed'] font-extrabold uppercase text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-none group-hover:text-[#FFAF00] transition-colors">
+                <h3 className="font-['Barlow_Condensed'] font-extrabold uppercase text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-none group-hover:text-brand-yellow transition-colors">
                   LAND WARFARE
                 </h3>
                 <p className="font-['Inter'] text-xs text-[#A7ADA9] max-w-xs mt-1.5 line-clamp-2">
@@ -60,7 +60,7 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
               </div>
 
               {/* Golden Yellow Arrow Icon */}
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#FFAF00] text-black flex items-center justify-center shrink-0 shadow-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:bg-[#ffb71a]">
+              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-brand-yellow text-black flex items-center justify-center shrink-0 shadow-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:bg-brand-yellow-hover">
                 <ArrowUpRight className="w-5 h-5 stroke-[2.5]" />
               </div>
             </div>
@@ -69,7 +69,7 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
           {/* Card 2: NAVAL & MARITIME */}
           <div
             onClick={() => onSelectDomain('NAVAL')}
-            className="group relative aspect-[16/10] rounded-2xl overflow-hidden bg-[#191E1B] border border-white/10 hover:border-[#FFAF00] transition-all duration-400 cursor-pointer shadow-xl flex flex-col justify-end"
+            className="group relative aspect-[16/10] rounded-2xl overflow-hidden bg-[#191E1B] border border-white/10 hover:border-brand-yellow transition-all duration-400 cursor-pointer shadow-xl flex flex-col justify-end"
           >
             {/* Background Image: Golden Horizon Naval Fleet Exercise */}
             <div className="absolute inset-0 overflow-hidden">
@@ -83,7 +83,7 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
             </div>
 
             {/* Corner Badge */}
-            <div className="absolute top-5 left-5 z-10 flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B0F0E]/80 backdrop-blur-md border border-white/10 text-xs font-['Plus_Jakarta_Sans'] font-bold text-[#FFAF00]">
+            <div className="absolute top-5 left-5 z-10 flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B0F0E]/80 backdrop-blur-md border border-white/10 text-xs font-['Plus_Jakarta_Sans'] font-bold text-brand-yellow">
               <Anchor className="w-3.5 h-3.5" />
               <span>MARITIME DOMAIN</span>
             </div>
@@ -91,10 +91,10 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
             {/* Bottom-left Category Title and Golden Arrow */}
             <div className="relative z-10 p-6 sm:p-7 flex items-end justify-between">
               <div className="space-y-1">
-                <span className="font-['Plus_Jakarta_Sans'] text-xs font-bold uppercase tracking-widest text-[#FFAF00] block">
+                <span className="font-['Plus_Jakarta_Sans'] text-xs font-bold uppercase tracking-widest text-brand-yellow block">
                   Subsurface & Fleet Command
                 </span>
-                <h3 className="font-['Barlow_Condensed'] font-extrabold uppercase text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-none group-hover:text-[#FFAF00] transition-colors">
+                <h3 className="font-['Barlow_Condensed'] font-extrabold uppercase text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-none group-hover:text-brand-yellow transition-colors">
                   NAVAL & MARITIME
                 </h3>
                 <p className="font-['Inter'] text-xs text-[#A7ADA9] max-w-xs mt-1.5 line-clamp-2">
@@ -103,7 +103,7 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
               </div>
 
               {/* Golden Yellow Arrow Icon */}
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#FFAF00] text-black flex items-center justify-center shrink-0 shadow-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:bg-[#ffb71a]">
+              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-brand-yellow text-black flex items-center justify-center shrink-0 shadow-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:bg-brand-yellow-hover">
                 <ArrowUpRight className="w-5 h-5 stroke-[2.5]" />
               </div>
             </div>
@@ -112,7 +112,7 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
           {/* Card 3: AIR MILITARY */}
           <div
             onClick={() => onSelectDomain('AIR')}
-            className="group relative aspect-[16/10] rounded-2xl overflow-hidden bg-[#191E1B] border border-white/10 hover:border-[#FFAF00] transition-all duration-400 cursor-pointer shadow-xl flex flex-col justify-end"
+            className="group relative aspect-[16/10] rounded-2xl overflow-hidden bg-[#191E1B] border border-white/10 hover:border-brand-yellow transition-all duration-400 cursor-pointer shadow-xl flex flex-col justify-end"
           >
             {/* Background Image: Coordinated Fighters Above Golden Clouds */}
             <div className="absolute inset-0 overflow-hidden">
@@ -126,7 +126,7 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
             </div>
 
             {/* Corner Badge */}
-            <div className="absolute top-5 left-5 z-10 flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B0F0E]/80 backdrop-blur-md border border-white/10 text-xs font-['Plus_Jakarta_Sans'] font-bold text-[#FFAF00]">
+            <div className="absolute top-5 left-5 z-10 flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B0F0E]/80 backdrop-blur-md border border-white/10 text-xs font-['Plus_Jakarta_Sans'] font-bold text-brand-yellow">
               <Plane className="w-3.5 h-3.5" />
               <span>AEROSPACE DOMAIN</span>
             </div>
@@ -134,10 +134,10 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
             {/* Bottom-left Category Title and Golden Arrow */}
             <div className="relative z-10 p-6 sm:p-7 flex items-end justify-between">
               <div className="space-y-1">
-                <span className="font-['Plus_Jakarta_Sans'] text-xs font-bold uppercase tracking-widest text-[#FFAF00] block">
+                <span className="font-['Plus_Jakarta_Sans'] text-xs font-bold uppercase tracking-widest text-brand-yellow block">
                   Supersonic & Airborne C4ISR
                 </span>
-                <h3 className="font-['Barlow_Condensed'] font-extrabold uppercase text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-none group-hover:text-[#FFAF00] transition-colors">
+                <h3 className="font-['Barlow_Condensed'] font-extrabold uppercase text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-none group-hover:text-brand-yellow transition-colors">
                   AIR MILITARY
                 </h3>
                 <p className="font-['Inter'] text-xs text-[#A7ADA9] max-w-xs mt-1.5 line-clamp-2">
@@ -146,7 +146,7 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
               </div>
 
               {/* Golden Yellow Arrow Icon */}
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#FFAF00] text-black flex items-center justify-center shrink-0 shadow-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:bg-[#ffb71a]">
+              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-brand-yellow text-black flex items-center justify-center shrink-0 shadow-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:bg-brand-yellow-hover">
                 <ArrowUpRight className="w-5 h-5 stroke-[2.5]" />
               </div>
             </div>

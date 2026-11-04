@@ -28,9 +28,9 @@ export const PrimaryButton: React.FC<ButtonProps> = ({
 
   const variantClasses = {
     primary:
-      'bg-[#FFAF00] text-[#000000] font-bold uppercase tracking-wider hover:bg-[#ffb71a] hover:shadow-[0_4px_20px_rgba(255,175,0,0.35)] hover:-translate-y-0.5 active:translate-y-0 border border-transparent',
+      'bg-brand-yellow text-[#000000] font-bold uppercase tracking-wider hover:bg-brand-yellow-hover hover:shadow-[0_4px_20px_rgba(249,245,56,0.35)] hover:-translate-y-0.5 active:translate-y-0 border border-transparent',
     secondary:
-      'bg-transparent text-white font-medium uppercase tracking-wider border border-white/25 hover:border-[#FFAF00] hover:text-[#FFAF00] hover:bg-white/[0.03] active:translate-y-0',
+      'bg-transparent text-white font-medium uppercase tracking-wider border border-white/25 hover:border-brand-yellow hover:text-brand-yellow hover:bg-white/[0.03] active:translate-y-0',
     ghost:
       'bg-transparent text-[#A7ADA9] hover:text-white font-medium hover:bg-white/[0.05] border border-transparent',
   }[variant];
@@ -47,7 +47,7 @@ export const PrimaryButton: React.FC<ButtonProps> = ({
     </>
   );
 
-  const combinedClass = `group inline-flex items-center justify-center rounded-full transition-all duration-300 select-none cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFAF00] ${sizeClasses} ${variantClasses} ${className}`;
+  const combinedClass = `group inline-flex items-center justify-center rounded-full transition-all duration-300 select-none cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow ${sizeClasses} ${variantClasses} ${className}`;
 
   if (asAnchor) {
     return (

@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-yellow: #FFAF00;
+  --color-brand-yellow: #F9F538;
+  --color-brand-yellow-hover: #FAF75C;
   --color-brand-black: #000000;
   --color-brand-green: #1F4941;
   --color-tactical-bg: #0B0F0E;
@@ -76,5 +77,5 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFAF00;
+  background: #F9F538;
 }

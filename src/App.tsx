@@ -54,7 +54,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0B0F0E] text-[#FFFFFF] font-['Inter'] selection:bg-[#FFAF00] selection:text-[#000000] relative">
+    <div className="min-h-screen bg-[#0B0F0E] text-[#FFFFFF] font-['Inter'] selection:bg-brand-yellow selection:text-[#000000] relative">
       {/* Global Header */}
       <Header
         onOpenSearch={() => setSearchOpen(true)}

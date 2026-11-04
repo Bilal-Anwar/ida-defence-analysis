@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className="relative bg-[#070A09] border-t border-white/10 text-left overflow-hidden">
       {/* Subtle tactical ambient glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-[#FFAF00]/30 to-transparent" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[1px] bg-gradient-to-r from-transparent via-brand-yellow/30 to-transparent" />
 
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 pt-16 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-14 border-b border-white/10">
@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
               International Defence Analysis (IDA) is the premier independent editorial platform delivering authoritative news, strategic intelligence, and technical insights across global defense, aerospace, naval warfare, and emerging security domains.
             </p>
 
-            <div className="flex items-center gap-2 text-xs font-['Plus_Jakarta_Sans'] font-bold text-[#FFAF00] uppercase tracking-wider">
+            <div className="flex items-center gap-2 text-xs font-['Plus_Jakarta_Sans'] font-bold text-brand-yellow uppercase tracking-wider">
               <span>INDEPENDENT</span>
               <span>·</span>
               <span>DISTINCTIVE</span>
@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3 py-1.5 rounded-md bg-[#121715] border border-white/10 hover:border-[#FFAF00] text-xs text-[#A7ADA9] hover:text-[#FFAF00] transition-colors"
+                  className="px-3 py-1.5 rounded-md bg-[#121715] border border-white/10 hover:border-brand-yellow text-xs text-[#A7ADA9] hover:text-brand-yellow transition-colors"
                 >
                   {social.name}
                 </a>
@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
 
           {/* Column 2: Explore (span 2) */}
           <div className="lg:col-span-2 space-y-4">
-            <span className="font-['Plus_Jakarta_Sans'] font-bold text-xs uppercase tracking-widest text-[#FFAF00] block">
+            <span className="font-['Plus_Jakarta_Sans'] font-bold text-xs uppercase tracking-widest text-brand-yellow block">
               EXPLORE
             </span>
             <ul className="space-y-2.5">
@@ -68,7 +68,7 @@ export const Footer: React.FC = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="font-['Inter'] text-sm text-[#A7ADA9] hover:text-[#FFAF00] transition-colors inline-block"
+                    className="font-['Inter'] text-sm text-[#A7ADA9] hover:text-brand-yellow transition-colors inline-block"
                   >
                     {link.label}
                   </a>
@@ -79,7 +79,7 @@ export const Footer: React.FC = () => {
 
           {/* Column 3: Categories (span 3) */}
           <div className="lg:col-span-3 space-y-4">
-            <span className="font-['Plus_Jakarta_Sans'] font-bold text-xs uppercase tracking-widest text-[#FFAF00] block">
+            <span className="font-['Plus_Jakarta_Sans'] font-bold text-xs uppercase tracking-widest text-brand-yellow block">
               COVERAGE DOMAINS
             </span>
             <ul className="space-y-2.5">
@@ -87,7 +87,7 @@ export const Footer: React.FC = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="font-['Inter'] text-sm text-[#A7ADA9] hover:text-[#FFAF00] transition-colors inline-block"
+                    className="font-['Inter'] text-sm text-[#A7ADA9] hover:text-brand-yellow transition-colors inline-block"
                   >
                     {link.label}
                   </a>
@@ -98,7 +98,7 @@ export const Footer: React.FC = () => {
 
           {/* Column 4: Organization & Accreditations (span 2) */}
           <div className="lg:col-span-2 space-y-4">
-            <span className="font-['Plus_Jakarta_Sans'] font-bold text-xs uppercase tracking-widest text-[#FFAF00] block">
+            <span className="font-['Plus_Jakarta_Sans'] font-bold text-xs uppercase tracking-widest text-brand-yellow block">
               ORGANIZATION
             </span>
             <ul className="space-y-2.5">
@@ -106,7 +106,7 @@ export const Footer: React.FC = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="font-['Inter'] text-sm text-[#A7ADA9] hover:text-[#FFAF00] transition-colors inline-block"
+                    className="font-['Inter'] text-sm text-[#A7ADA9] hover:text-brand-yellow transition-colors inline-block"
                   >
                     {link.label}
                   </a>
@@ -117,7 +117,7 @@ export const Footer: React.FC = () => {
             <div className="pt-2">
               <button
                 onClick={scrollToTop}
-                className="inline-flex items-center gap-1.5 text-xs text-[#A7ADA9] hover:text-[#FFAF00] transition-colors pt-2"
+                className="inline-flex items-center gap-1.5 text-xs text-[#A7ADA9] hover:text-brand-yellow transition-colors pt-2"
               >
                 <ArrowUp className="w-3.5 h-3.5" /> Back to top
               </button>

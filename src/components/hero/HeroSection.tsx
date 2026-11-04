@@ -76,7 +76,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             cy="175"
             rx="240"
             ry="85"
-            fill="rgba(255, 175, 0, 0.16)"
+            fill="rgba(249,245,56, 0.16)"
             filter="url(#goldenGlow)"
           />
         </svg>
@@ -96,8 +96,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="max-w-3xl flex flex-col items-start text-left space-y-6">
           {/* Eyebrow */}
           <div className="flex items-center gap-2.5">
-            <span className="w-5 h-[1.5px] bg-[#FFAF00]" />
-            <span className="font-['Plus_Jakarta_Sans'] font-bold text-[11px] tracking-[0.16em] text-[#FFAF00] uppercase">
+            <span className="w-5 h-[1.5px] bg-brand-yellow" />
+            <span className="font-['Plus_Jakarta_Sans'] font-bold text-[11px] tracking-[0.16em] text-brand-yellow uppercase">
               GLOBAL DEFENCE INTELLIGENCE
             </span>
           </div>

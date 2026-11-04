@@ -56,12 +56,12 @@ export const Header: React.FC<HeaderProps> = ({
               href="#hero"
               onClick={() => onSelectCategory && onSelectCategory('HOME')}
               className={`group relative text-xs font-['Inter'] font-semibold uppercase tracking-wider py-1.5 transition-colors duration-250 whitespace-nowrap shrink-0 ${
-                activeCategory.toUpperCase() === 'HOME' ? 'text-[#FFAF00]' : 'text-white/90 hover:text-[#FFAF00]'
+                activeCategory.toUpperCase() === 'HOME' ? 'text-brand-yellow' : 'text-white/90 hover:text-brand-yellow'
               }`}
             >
               <span>HOME</span>
               <span
-                className={`absolute bottom-0 left-0 h-[2px] bg-[#FFAF00] transition-all duration-300 ${
+                className={`absolute bottom-0 left-0 h-[2px] bg-brand-yellow transition-all duration-300 ${
                   activeCategory.toUpperCase() === 'HOME' ? 'w-full' : 'w-0 group-hover:w-full'
                 }`}
               />
@@ -72,12 +72,12 @@ export const Header: React.FC<HeaderProps> = ({
               href="#latest-news"
               onClick={() => onSelectCategory && onSelectCategory('NEWS')}
               className={`group relative text-xs font-['Inter'] font-semibold uppercase tracking-wider py-1.5 transition-colors duration-250 whitespace-nowrap shrink-0 ${
-                activeCategory.toUpperCase() === 'NEWS' ? 'text-[#FFAF00]' : 'text-white/90 hover:text-[#FFAF00]'
+                activeCategory.toUpperCase() === 'NEWS' ? 'text-brand-yellow' : 'text-white/90 hover:text-brand-yellow'
               }`}
             >
               <span>NEWS</span>
               <span
-                className={`absolute bottom-0 left-0 h-[2px] bg-[#FFAF00] transition-all duration-300 ${
+                className={`absolute bottom-0 left-0 h-[2px] bg-brand-yellow transition-all duration-300 ${
                   activeCategory.toUpperCase() === 'NEWS' ? 'w-full' : 'w-0 group-hover:w-full'
                 }`}
               />
@@ -88,12 +88,12 @@ export const Header: React.FC<HeaderProps> = ({
               href="#featured-news"
               onClick={() => onSelectCategory && onSelectCategory('ARTICLES')}
               className={`group relative text-xs font-['Inter'] font-semibold uppercase tracking-wider py-1.5 transition-colors duration-250 whitespace-nowrap shrink-0 ${
-                activeCategory.toUpperCase() === 'ARTICLES' ? 'text-[#FFAF00]' : 'text-white/90 hover:text-[#FFAF00]'
+                activeCategory.toUpperCase() === 'ARTICLES' ? 'text-brand-yellow' : 'text-white/90 hover:text-brand-yellow'
               }`}
             >
               <span>ARTICLES</span>
               <span
-                className={`absolute bottom-0 left-0 h-[2px] bg-[#FFAF00] transition-all duration-300 ${
+                className={`absolute bottom-0 left-0 h-[2px] bg-brand-yellow transition-all duration-300 ${
                   activeCategory.toUpperCase() === 'ARTICLES' ? 'w-full' : 'w-0 group-hover:w-full'
                 }`}
               />
@@ -108,17 +108,17 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 type="button"
                 onClick={() => setDropdownOpen((prev) => !prev)}
-                className="group relative flex items-center gap-1 text-xs font-['Inter'] font-semibold uppercase tracking-wider py-1.5 transition-colors duration-250 whitespace-nowrap shrink-0 text-white/90 hover:text-[#FFAF00] cursor-pointer"
+                className="group relative flex items-center gap-1 text-xs font-['Inter'] font-semibold uppercase tracking-wider py-1.5 transition-colors duration-250 whitespace-nowrap shrink-0 text-white/90 hover:text-brand-yellow cursor-pointer"
                 aria-expanded={dropdownOpen}
                 aria-haspopup="true"
               >
                 <span>DOMAIN</span>
                 <ChevronDown
                   className={`w-3.5 h-3.5 transition-transform duration-250 ${
-                    dropdownOpen ? 'rotate-180 text-[#FFAF00]' : 'text-white/60 group-hover:text-[#FFAF00]'
+                    dropdownOpen ? 'rotate-180 text-brand-yellow' : 'text-white/60 group-hover:text-brand-yellow'
                   }`}
                 />
-                <span className="absolute bottom-0 left-0 h-[2px] bg-[#FFAF00] transition-all duration-300 w-0 group-hover:w-full" />
+                <span className="absolute bottom-0 left-0 h-[2px] bg-brand-yellow transition-all duration-300 w-0 group-hover:w-full" />
               </button>
 
               {/* Inner Dropdown Menu Card */}
@@ -131,7 +131,7 @@ export const Header: React.FC<HeaderProps> = ({
               >
                 <div className="w-72 rounded-xl bg-[#121715]/95 backdrop-blur-xl border border-white/15 p-2 shadow-[0_20px_40px_rgba(0,0,0,0.85)] space-y-1 text-left relative overflow-hidden">
                   {/* Subtle top golden glow line */}
-                  <div className="absolute top-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-[#FFAF00] to-transparent" />
+                  <div className="absolute top-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-brand-yellow to-transparent" />
 
                   {/* Dropdown Items (without top heading or active border) */}
                   {[
@@ -170,10 +170,10 @@ export const Header: React.FC<HeaderProps> = ({
                       className="group/item block px-3 py-2.5 rounded-lg hover:bg-white/5 transition-all duration-200"
                     >
                       <div className="flex items-center justify-between">
-                        <span className="font-['Barlow_Condensed'] font-bold text-sm uppercase tracking-wide text-white group-hover/item:text-[#FFAF00] transition-colors">
+                        <span className="font-['Barlow_Condensed'] font-bold text-sm uppercase tracking-wide text-white group-hover/item:text-brand-yellow transition-colors">
                           {subItem.label}
                         </span>
-                        <span className="text-[10px] text-[#A7ADA9] group-hover/item:text-[#FFAF00] font-mono">
+                        <span className="text-[10px] text-[#A7ADA9] group-hover/item:text-brand-yellow font-mono">
                           ›
                         </span>
                       </div>
@@ -191,12 +191,12 @@ export const Header: React.FC<HeaderProps> = ({
               href="#magazines"
               onClick={() => onSelectCategory && onSelectCategory('EXPOS')}
               className={`group relative text-xs font-['Inter'] font-semibold uppercase tracking-wider py-1.5 transition-colors duration-250 whitespace-nowrap shrink-0 ${
-                activeCategory.toUpperCase() === 'EXPOS' ? 'text-[#FFAF00]' : 'text-white/90 hover:text-[#FFAF00]'
+                activeCategory.toUpperCase() === 'EXPOS' ? 'text-brand-yellow' : 'text-white/90 hover:text-brand-yellow'
               }`}
             >
               <span>EXPOS</span>
               <span
-                className={`absolute bottom-0 left-0 h-[2px] bg-[#FFAF00] transition-all duration-300 ${
+                className={`absolute bottom-0 left-0 h-[2px] bg-brand-yellow transition-all duration-300 ${
                   activeCategory.toUpperCase() === 'EXPOS' ? 'w-full' : 'w-0 group-hover:w-full'
                 }`}
               />
@@ -207,12 +207,12 @@ export const Header: React.FC<HeaderProps> = ({
               href="#magazines"
               onClick={() => onSelectCategory && onSelectCategory('MAGAZINES')}
               className={`group relative text-xs font-['Inter'] font-semibold uppercase tracking-wider py-1.5 transition-colors duration-250 whitespace-nowrap shrink-0 ${
-                activeCategory.toUpperCase() === 'MAGAZINES' ? 'text-[#FFAF00]' : 'text-white/90 hover:text-[#FFAF00]'
+                activeCategory.toUpperCase() === 'MAGAZINES' ? 'text-brand-yellow' : 'text-white/90 hover:text-brand-yellow'
               }`}
             >
               <span>MAGAZINES</span>
               <span
-                className={`absolute bottom-0 left-0 h-[2px] bg-[#FFAF00] transition-all duration-300 ${
+                className={`absolute bottom-0 left-0 h-[2px] bg-brand-yellow transition-all duration-300 ${
                   activeCategory.toUpperCase() === 'MAGAZINES' ? 'w-full' : 'w-0 group-hover:w-full'
                 }`}
               />
@@ -223,12 +223,12 @@ export const Header: React.FC<HeaderProps> = ({
               href="#interviews"
               onClick={() => onSelectCategory && onSelectCategory('INTERVIEWS')}
               className={`group relative text-xs font-['Inter'] font-semibold uppercase tracking-wider py-1.5 transition-colors duration-250 whitespace-nowrap shrink-0 ${
-                activeCategory.toUpperCase() === 'INTERVIEWS' ? 'text-[#FFAF00]' : 'text-white/90 hover:text-[#FFAF00]'
+                activeCategory.toUpperCase() === 'INTERVIEWS' ? 'text-brand-yellow' : 'text-white/90 hover:text-brand-yellow'
               }`}
             >
               <span>INTERVIEWS</span>
               <span
-                className={`absolute bottom-0 left-0 h-[2px] bg-[#FFAF00] transition-all duration-300 ${
+                className={`absolute bottom-0 left-0 h-[2px] bg-brand-yellow transition-all duration-300 ${
                   activeCategory.toUpperCase() === 'INTERVIEWS' ? 'w-full' : 'w-0 group-hover:w-full'
                 }`}
               />
@@ -253,7 +253,7 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Mobile / Tablet Hamburger */}
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="xl:hidden p-2.5 rounded-full bg-white/5 border border-white/10 hover:border-[#FFAF00] text-white hover:text-[#FFAF00] transition-colors cursor-pointer"
+              className="xl:hidden p-2.5 rounded-full bg-white/5 border border-white/10 hover:border-brand-yellow text-white hover:text-brand-yellow transition-colors cursor-pointer"
               aria-label="Open navigation menu"
             >
               <Menu className="w-5 h-5" />

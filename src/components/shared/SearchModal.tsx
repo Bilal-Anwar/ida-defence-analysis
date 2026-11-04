@@ -87,7 +87,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
       >
         {/* Search input bar */}
         <div className="flex items-center gap-3 px-5 py-4 border-b border-white/10 bg-[#191E1B]">
-          <Search className="w-5 h-5 text-[#FFAF00] shrink-0" />
+          <Search className="w-5 h-5 text-brand-yellow shrink-0" />
           <input
             type="text"
             value={query}
@@ -118,7 +118,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                   <button
                     key={term}
                     onClick={() => setQuery(term)}
-                    className="px-3 py-1 rounded-full bg-[#191E1B] hover:bg-[#FFAF00] hover:text-[#000] text-xs text-[#A7ADA9] font-medium transition-colors border border-white/5"
+                    className="px-3 py-1 rounded-full bg-[#191E1B] hover:bg-brand-yellow hover:text-[#000] text-xs text-[#A7ADA9] font-medium transition-colors border border-white/5"
                   >
                     {term}
                   </button>
@@ -130,7 +130,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
           {/* Articles */}
           {results.articles.length > 0 && (
             <div>
-              <div className="flex items-center gap-2 px-2 mb-2 text-xs font-bold uppercase tracking-wider text-[#FFAF00]">
+              <div className="flex items-center gap-2 px-2 mb-2 text-xs font-bold uppercase tracking-wider text-brand-yellow">
                 <Newspaper className="w-3.5 h-3.5" />
                 <span>Editorial Articles & Intelligence ({results.articles.length})</span>
               </div>
@@ -145,14 +145,14 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-left transition-colors flex items-center justify-between group"
                   >
                     <div className="space-y-0.5 pr-4">
-                      <span className="font-['Plus_Jakarta_Sans'] text-[10px] text-[#FFAF00] font-bold uppercase tracking-wider block">
+                      <span className="font-['Plus_Jakarta_Sans'] text-[10px] text-brand-yellow font-bold uppercase tracking-wider block">
                         {art.category} · {art.date}
                       </span>
-                      <h4 className="font-['Barlow_Condensed'] font-semibold text-base text-white group-hover:text-[#FFAF00] transition-colors leading-tight">
+                      <h4 className="font-['Barlow_Condensed'] font-semibold text-base text-white group-hover:text-brand-yellow transition-colors leading-tight">
                         {art.title}
                       </h4>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-[#A7ADA9] group-hover:text-[#FFAF00] group-hover:translate-x-1 transition-all shrink-0" />
+                    <ArrowRight className="w-4 h-4 text-[#A7ADA9] group-hover:text-brand-yellow group-hover:translate-x-1 transition-all shrink-0" />
                   </button>
                 ))}
               </div>
@@ -162,7 +162,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
           {/* Magazines */}
           {results.magazines.length > 0 && (
             <div>
-              <div className="flex items-center gap-2 px-2 mb-2 text-xs font-bold uppercase tracking-wider text-[#FFAF00]">
+              <div className="flex items-center gap-2 px-2 mb-2 text-xs font-bold uppercase tracking-wider text-brand-yellow">
                 <BookOpen className="w-3.5 h-3.5" />
                 <span>IDA Publications ({results.magazines.length})</span>
               </div>
@@ -177,14 +177,14 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-left transition-colors flex items-center justify-between group"
                   >
                     <div className="space-y-0.5 pr-4">
-                      <span className="font-['Plus_Jakarta_Sans'] text-[10px] text-[#FFAF00] font-bold uppercase tracking-wider block">
+                      <span className="font-['Plus_Jakarta_Sans'] text-[10px] text-brand-yellow font-bold uppercase tracking-wider block">
                         {mag.edition}
                       </span>
-                      <h4 className="font-['Barlow_Condensed'] font-semibold text-base text-white group-hover:text-[#FFAF00] transition-colors">
+                      <h4 className="font-['Barlow_Condensed'] font-semibold text-base text-white group-hover:text-brand-yellow transition-colors">
                         {mag.title}
                       </h4>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-[#A7ADA9] group-hover:text-[#FFAF00] group-hover:translate-x-1 transition-all shrink-0" />
+                    <ArrowRight className="w-4 h-4 text-[#A7ADA9] group-hover:text-brand-yellow group-hover:translate-x-1 transition-all shrink-0" />
                   </button>
                 ))}
               </div>
@@ -194,7 +194,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
           {/* Interviews */}
           {results.interviews.length > 0 && (
             <div>
-              <div className="flex items-center gap-2 px-2 mb-2 text-xs font-bold uppercase tracking-wider text-[#FFAF00]">
+              <div className="flex items-center gap-2 px-2 mb-2 text-xs font-bold uppercase tracking-wider text-brand-yellow">
                 <User className="w-3.5 h-3.5" />
                 <span>Executive Interviews ({results.interviews.length})</span>
               </div>
@@ -209,14 +209,14 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-left transition-colors flex items-center justify-between group"
                   >
                     <div className="space-y-0.5 pr-4">
-                      <span className="font-['Plus_Jakarta_Sans'] text-[10px] text-[#FFAF00] font-bold uppercase tracking-wider block">
+                      <span className="font-['Plus_Jakarta_Sans'] text-[10px] text-brand-yellow font-bold uppercase tracking-wider block">
                         {item.name} — {item.organization}
                       </span>
-                      <h4 className="font-['Barlow_Condensed'] font-semibold text-base text-white group-hover:text-[#FFAF00] transition-colors">
+                      <h4 className="font-['Barlow_Condensed'] font-semibold text-base text-white group-hover:text-brand-yellow transition-colors">
                         "{item.headline}"
                       </h4>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-[#A7ADA9] group-hover:text-[#FFAF00] group-hover:translate-x-1 transition-all shrink-0" />
+                    <ArrowRight className="w-4 h-4 text-[#A7ADA9] group-hover:text-brand-yellow group-hover:translate-x-1 transition-all shrink-0" />
                   </button>
                 ))}
               </div>
@@ -234,7 +234,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
         {/* Footer info */}
         <div className="px-5 py-3 border-t border-white/10 bg-[#0B0F0E] flex items-center justify-between text-[11px] text-[#A7ADA9]">
           <span>Press ESC to exit</span>
-          <span className="text-[#FFAF00]">Live Index Search</span>
+          <span className="text-brand-yellow">Live Index Search</span>
         </div>
       </div>
     </div>
