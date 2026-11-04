@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
+import { ArrowUpRight, Pause, Play } from 'lucide-react';
 import { SectionHeading } from '../shared/SectionHeading';
 import { InterviewCard } from './InterviewCard';
 import { EXCLUSIVE_INTERVIEWS, InterviewItem } from '../../data/interviews';
@@ -11,6 +11,7 @@ interface InterviewsSectionProps {
 
 export const InterviewsSection: React.FC<InterviewsSectionProps> = ({ onReadInterview }) => {
   const [isPaused, setIsPaused] = useState(false);
+  const [isInteracting, setIsInteracting] = useState(false);
   const prefersReduced = useReducedMotion();
 
   // Create seamless duplicate array for infinite loop
@@ -26,12 +27,15 @@ export const InterviewsSection: React.FC<InterviewsSectionProps> = ({ onReadInte
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-8">
           <SectionHeading
             eyebrow="INDUSTRY LEADERS"
-            title="EXCLUSIVE INTERVIEWS"
+            title="IDA-EXCLUSIVE INTERVIEWS"
             accentWord="EXCLUSIVE"
             description="Conversations with the visionaries, executives, and military leaders shaping the international defence landscape."
           />
 
           <div className="flex items-center gap-3">
+            <a href="https://defenceida.com/category/interviews/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-bold text-[#FFAF00] hover:text-white">
+              All interviews <ArrowUpRight className="w-3.5 h-3.5" />
+            </a>
             <button
               onClick={() => setIsPaused((prev) => !prev)}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#191E1B] border border-white/10 text-xs text-[#A7ADA9] hover:text-white transition-colors"
@@ -46,11 +50,15 @@ export const InterviewsSection: React.FC<InterviewsSectionProps> = ({ onReadInte
 
       {/* Continuous Marquee Track */}
       <div
-        className="w-full mt-10 overflow-hidden relative"
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
-        onTouchStart={() => setIsPaused(true)}
-        onTouchEnd={() => setIsPaused(false)}
+        className={`w-full mt-10 relative ${prefersReduced ? 'overflow-x-auto' : 'overflow-hidden'}`}
+        onMouseEnter={() => setIsInteracting(true)}
+        onMouseLeave={() => setIsInteracting(false)}
+        onFocusCapture={() => setIsInteracting(true)}
+        onBlurCapture={(event) => {
+          if (!event.currentTarget.contains(event.relatedTarget)) setIsInteracting(false);
+        }}
+        onTouchStart={() => setIsInteracting(true)}
+        onTouchEnd={() => setIsInteracting(false)}
       >
         {/* Edge Fade Masks for Smooth In/Out */}
         <div className="absolute top-0 bottom-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[#121715] to-transparent z-10 pointer-events-none" />
@@ -61,7 +69,7 @@ export const InterviewsSection: React.FC<InterviewsSectionProps> = ({ onReadInte
             prefersReduced ? '' : 'animate-marquee'
           }`}
           style={{
-            animationPlayState: isPaused || prefersReduced ? 'paused' : 'running',
+            animationPlayState: isPaused || isInteracting || prefersReduced ? 'paused' : 'running',
             animationDuration: '38s',
           }}
         >
