@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Menu, ChevronDown } from 'lucide-react';
+import { Menu, ChevronDown } from 'lucide-react';
 import { MAIN_NAV_ITEMS } from '../../data/navigation';
 import { OfficialLogo } from '../shared/OfficialLogo';
 import { PrimaryButton } from '../shared/PrimaryButton';
@@ -266,7 +266,6 @@ export const Header: React.FC<HeaderProps> = ({
       <MobileMenu
         isOpen={mobileMenuOpen}
         onClose={() => setMobileMenuOpen(false)}
-        onOpenSearch={onOpenSearch}
         activeItem={activeCategory}
         onSelectNav={(cat) => {
           if (cat && onSelectCategory) onSelectCategory(cat);

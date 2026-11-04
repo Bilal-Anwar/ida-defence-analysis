@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { X, Search, ArrowRight, Shield, ChevronDown } from 'lucide-react';
+import { X, ArrowRight, Shield, ChevronDown } from 'lucide-react';
 import { MAIN_NAV_ITEMS, SOCIAL_LINKS } from '../../data/navigation';
 import { OfficialLogo } from '../shared/OfficialLogo';
 import { PrimaryButton } from '../shared/PrimaryButton';
@@ -7,7 +7,6 @@ import { PrimaryButton } from '../shared/PrimaryButton';
 interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
-  onOpenSearch: () => void;
   activeItem?: string;
   onSelectNav: (category?: string) => void;
 }
@@ -15,7 +14,6 @@ interface MobileMenuProps {
 export const MobileMenu: React.FC<MobileMenuProps> = ({
   isOpen,
   onClose,
-  onOpenSearch,
   activeItem = 'HOME',
   onSelectNav,
 }) => {
@@ -51,23 +49,6 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
           aria-label="Close mobile navigation"
         >
           <X className="w-6 h-6" />
-        </button>
-      </div>
-
-      {/* Search Bar in Mobile Drawer */}
-      <div className="px-6 pt-5">
-        <button
-          onClick={() => {
-            onClose();
-            onOpenSearch();
-          }}
-          className="w-full flex items-center justify-between px-4 py-3 rounded-xl bg-[#191E1B] border border-white/10 text-left text-sm text-[#A7ADA9] hover:border-brand-yellow transition-colors"
-        >
-          <div className="flex items-center gap-3">
-            <Search className="w-4 h-4 text-brand-yellow" />
-            <span>Search articles, interviews, expos...</span>
-          </div>
-          <span className="text-[10px] uppercase font-bold text-brand-yellow">Open</span>
         </button>
       </div>
 
