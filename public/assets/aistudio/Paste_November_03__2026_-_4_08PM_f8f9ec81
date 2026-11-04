@@ -1,0 +1,1716 @@
+# MASTER DEVELOPMENT PROMPT
+## International Defence Analysis (IDA) — Premium Defence Media Website
+
+### YOUR ROLE
+
+You are an award-winning Creative Director, Senior UI/UX Designer, Design Systems Architect, and Principal React Frontend Engineer with expertise in building premium editorial websites for international defence, aerospace, technology, and intelligence publications.
+
+Your task is to design and develop a complete, production-quality homepage for:
+
+**INTERNATIONAL DEFENCE ANALYSIS (IDA)**
+
+Reference website: https://defenceida.com/
+
+The new website must preserve IDA's editorial identity, existing content categories, magazines, interviews, and business services while completely transforming its visual experience.
+
+Create a cinematic, sophisticated, military-inspired digital publication.
+
+The result should feel like a premium Awwwards-level editorial platform, with excellent usability and strong international defence industry credibility.
+
+**IMPORTANT: Build the actual working React application. Do not simply describe the design or generate static mockups.**
+
+---
+
+# 1. PROJECT REQUIREMENTS
+
+## Technology Stack
+
+Use:
+
+- React with TypeScript
+- Vite
+- Tailwind CSS
+- hls.js
+- lucide-react
+- Motion for React or Framer Motion
+- Swiper or Embla Carousel when appropriate
+
+Use modern React functional components and hooks.
+
+Create a modular, maintainable component architecture.
+
+Ensure compatibility with the Google AI Studio application development environment.
+
+Use working application code without requiring API keys for the initial visual demo.
+
+## Development Priorities
+
+1. Visual quality and brand consistency.
+2. Complete homepage section coverage.
+3. Responsive behavior.
+4. Functional interactions.
+5. Authentic editorial content.
+6. Performance optimization.
+7. Accessibility.
+8. Clean, maintainable code.
+
+Do not stop after building the hero section.
+
+Develop the complete homepage.
+
+---
+
+# 2. BRAND IDENTITY & ART DIRECTION
+
+## Brand
+
+Name: International Defence Analysis
+
+Abbreviation: IDA
+
+Tagline:
+
+INDEPENDENT. DISTINCTIVE. AUTHORITATIVE.
+
+Industry:
+
+Defence journalism, military intelligence, aerospace, geopolitical analysis, defence exhibitions, and international defence publications.
+
+Target audience:
+
+- Defence industry professionals
+- Military leadership
+- Aerospace professionals
+- Government stakeholders
+- Defence technology companies
+- Security analysts
+- International exhibition attendees
+- Defence enthusiasts
+
+## Design Philosophy
+
+Create a contemporary military editorial identity inspired by:
+
+- Advanced fighter aircraft
+- Naval defence systems
+- Radar interfaces
+- Military command centers
+- Aerospace engineering
+- Tactical equipment
+- High-end defence publications
+
+The website should communicate authority, intelligence, credibility, and technological sophistication.
+
+Avoid a gaming aesthetic or overly aggressive military styling.
+
+Use restrained premium effects and strong editorial design.
+
+---
+
+# 3. EXACT BRAND COLOR SYSTEM
+
+The existing IDA website uses a distinctive golden-yellow navigation color.
+
+Preserve this brand identity in the redesign.
+
+## Primary Palette
+
+Primary Brand Yellow:
+
+`#FFAF00`
+
+Brand Black:
+
+`#000000`
+
+Dark Green:
+
+`#1F4941`
+
+## Supporting Dark Theme
+
+Tactical Background:
+
+`#0B0F0E`
+
+Secondary Background:
+
+`#121715`
+
+Card Background:
+
+`#191E1B`
+
+Elevated Surface:
+
+`#222824`
+
+Primary Text:
+
+`#FFFFFF`
+
+Secondary Text:
+
+`#A7ADA9`
+
+Subtle Borders:
+
+`rgba(255,255,255,0.10)`
+
+## Accent Usage
+
+Use Golden Yellow for:
+
+- Main CTA buttons
+- Active navigation
+- Section eyebrow labels
+- Hover highlights
+- Category indicators
+- Editorial accents
+- Pagination indicators
+- Selected carousel controls
+
+Use dark green selectively for supporting UI elements.
+
+Do not replace the primary golden-yellow brand accent with green.
+
+## Visual Balance
+
+Approximately:
+
+75% dark backgrounds.
+
+15% white and gray typography.
+
+10% golden-yellow accents.
+
+The website must remain elegant, with controlled use of yellow.
+
+## Tailwind Theme
+
+Create reusable color tokens and utilities for the brand.
+
+Do not scatter arbitrary color values throughout the components.
+
+---
+
+# 4. TYPOGRAPHY SYSTEM
+
+Import Google Fonts:
+
+- Barlow Condensed
+- Inter
+- Plus Jakarta Sans
+- Instrument Serif
+
+## Typography Roles
+
+### Display Headlines
+
+Barlow Condensed, 700–800 weight.
+
+Uppercase.
+
+Bold military-inspired character.
+
+Tight line-height.
+
+### Editorial Headlines
+
+Inter ExtraBold.
+
+Use for article titles and important content.
+
+### Editorial Accent
+
+Instrument Serif Italic.
+
+Use sparingly for selected words in prominent headings.
+
+### Navigation & UI
+
+Inter Medium or SemiBold.
+
+### Eyebrow Labels
+
+Plus Jakarta Sans Bold.
+
+Uppercase.
+
+11px.
+
+Letter spacing: 0.16em.
+
+Color: #FFAF00.
+
+### Body Typography
+
+Inter Regular.
+
+14–16px.
+
+Line height: 1.6–1.75.
+
+## Responsive Heading Scale
+
+Hero desktop: 80–100px.
+
+Hero tablet: 58–72px.
+
+Hero mobile: 42–52px.
+
+Section headings desktop: 48–64px.
+
+Section headings mobile: 32–40px.
+
+Do not allow awkward word breaks.
+
+Use responsive `clamp()` values where appropriate.
+
+---
+
+# 5. GLOBAL LAYOUT SYSTEM
+
+Maximum content width: 1440px.
+
+Desktop page padding: 64px.
+
+Tablet padding: 32px.
+
+Mobile padding: 20px.
+
+Use a 12-column CSS grid on desktop.
+
+Apply consistent spacing and alignment.
+
+Recommended section spacing:
+
+Desktop: 112–144px.
+
+Tablet: 80–96px.
+
+Mobile: 64–80px.
+
+Use generous negative space.
+
+Do not make every section use the same card layout.
+
+Alternate editorial compositions to create visual rhythm.
+
+All sections must integrate into one coherent visual system.
+
+---
+
+# 6. HEADER & GLOBAL NAVIGATION
+
+Create an elegant responsive global header.
+
+## Desktop Header
+
+Position the header absolutely over the hero.
+
+On scroll, transform it into a sticky navigation bar.
+
+Background after scrolling:
+
+`rgba(11,15,14,0.92)`
+
+Backdrop filter:
+
+`blur(16px)`
+
+Bottom border:
+
+`1px solid rgba(255,255,255,0.10)`
+
+## Header Structure
+
+Left:
+
+Official IDA logo.
+
+Center:
+
+Navigation links.
+
+Right:
+
+Search icon and advertising CTA.
+
+## Navigation
+
+Preserve these existing categories:
+
+HOME
+
+NEWS
+
+ARTICLES
+
+ACQUISITIONS
+
+EXPOS
+
+CONFLICT
+
+WEAPONS
+
+GEOPOLITICS
+
+MAGAZINES
+
+INTERVIEWS
+
+Use an organized responsive navigation structure.
+
+If all links cannot fit comfortably in one row, use a refined two-tier header or grouped navigation.
+
+Do not reduce text until it becomes difficult to read.
+
+## Menu Design
+
+Font: Inter Medium.
+
+Text: White.
+
+Active state: Golden Yellow.
+
+Hover: Golden Yellow.
+
+Hover transition: 250ms.
+
+Use minimal animated underlines.
+
+## CTA
+
+Text:
+
+ADVERTISE WITH US
+
+Background: #FFAF00.
+
+Text: #000000.
+
+Shape: Rounded-full.
+
+## Mobile Navigation
+
+Use a hamburger icon.
+
+Clicking opens a full-screen dark overlay.
+
+Menu items should enter with subtle staggered motion.
+
+Include:
+
+- All navigation categories
+- Search
+- Advertising CTA
+- Social media links
+- Close button
+
+Lock background scrolling while the menu is open.
+
+Support Escape key closing and keyboard focus management.
+
+---
+
+# 7. HERO SECTION — CINEMATIC DEFENCE EXPERIENCE
+
+This is the most visually important section.
+
+Build a full-screen cinematic hero with premium military editorial styling.
+
+## Dimensions
+
+Height: 100svh.
+
+Minimum desktop height: 760px.
+
+Position: Relative.
+
+Overflow: Hidden.
+
+## Background Video
+
+Implement the following HLS stream for the initial technical prototype:
+
+`https://stream.mux.com/tLkHO1qZoaaQOUeVWo8hEBeGQfySP02EPS02BmnNFyXys.m3u8`
+
+Use hls.js.
+
+Configuration:
+
+`enableWorker: false`
+
+Video properties:
+
+- autoplay
+- muted
+- loop
+- playsInline
+- preload metadata
+
+Video opacity: 0.60.
+
+Video position: Absolute, inset 0.
+
+Object-fit: cover.
+
+The supplied video is a technical reference stream. Make the URL configurable so it can later be replaced with approved IDA-related fighter aircraft, naval, military exhibition, or defence technology footage.
+
+## HLS Requirements
+
+Detect native HLS support.
+
+Use hls.js when required.
+
+Initialize the player through React hooks.
+
+Destroy the HLS instance during cleanup.
+
+Handle stream errors.
+
+Provide a fallback defence-related image if video playback fails.
+
+Avoid unhandled autoplay promise rejections.
+
+## Gradient Overlays
+
+Left gradient:
+
+`linear-gradient(90deg, #0B0F0E 0%, rgba(11,15,14,0.85) 35%, transparent 100%)`
+
+Bottom gradient:
+
+`linear-gradient(0deg, #0B0F0E 0%, transparent 70%)`
+
+Add a subtle dark vignette.
+
+## Tactical Grid
+
+Add three vertical lines at:
+
+25%, 50%, 75%.
+
+Color:
+
+`rgba(255,255,255,0.10)`
+
+Line width: 1px.
+
+Visible on desktop.
+
+Hide or simplify on mobile.
+
+## Atmospheric Glow
+
+Create a large horizontal SVG ellipse near the top-center.
+
+Glow color:
+
+`rgba(255,175,0,0.16)`
+
+Use a Gaussian blur filter with standard deviation 25.
+
+Add a secondary subtle dark-green glow if it improves depth.
+
+Avoid an overpowering neon effect.
+
+---
+
+# 8. HERO CONTENT & TYPOGRAPHY
+
+## Eyebrow
+
+Text:
+
+GLOBAL DEFENCE INTELLIGENCE
+
+Font:
+
+Plus Jakarta Sans Bold.
+
+Size: 11px.
+
+Color: #FFAF00.
+
+Uppercase.
+
+Letter spacing: 0.16em.
+
+## Main Headline
+
+Text:
+
+INDEPENDENT.
+DISTINCTIVE.
+AUTHORITATIVE.
+
+Use Barlow Condensed ExtraBold.
+
+Desktop size: 88–100px.
+
+Mobile size: 42–52px.
+
+Line-height: 0.95–1.05.
+
+Color: White.
+
+Make the final period golden-yellow.
+
+Maintain exceptional text readability over video.
+
+## Description
+
+"Your trusted source for international defence news, expert analysis, exclusive interviews, and the latest developments shaping global security."
+
+Font: Inter.
+
+Size: 15px.
+
+Color: rgba(255,255,255,0.70).
+
+Maximum width: 520px.
+
+## Primary CTA
+
+Text:
+
+EXPLORE LATEST NEWS
+
+Background:
+
+#FFAF00.
+
+Text:
+
+#000000.
+
+Icon:
+
+ArrowRight.
+
+Shape:
+
+Rounded-full.
+
+Uppercase bold.
+
+Add subtle hover elevation and arrow movement.
+
+## Secondary CTA
+
+Text:
+
+OUR MAGAZINES
+
+Transparent background.
+
+Thin white border.
+
+White typography.
+
+Golden-yellow hover border.
+
+## Hero Layout
+
+Use a premium editorial composition.
+
+Desktop:
+
+Main headline and copy aligned to the left.
+
+Floating glass card positioned toward the right, with sufficient negative space.
+
+Mobile:
+
+Stack content vertically.
+
+Maintain clear headline hierarchy.
+
+Avoid card overlap.
+
+Do not place the glass card over important text.
+
+---
+
+# 9. LIQUID GLASS FLOATING CARD
+
+Create a premium glass card inspired by the provided CodeNest specification.
+
+## Dimensions
+
+Width: 200px.
+
+Height: 200px.
+
+Apply:
+
+`translate-y-[-50px]`
+
+on desktop.
+
+Adjust positioning responsively when necessary.
+
+## Exact CSS
+
+Background:
+
+`rgba(255,255,255,0.01)`
+
+Background blend mode:
+
+`luminosity`
+
+Backdrop filter:
+
+`blur(4px)`
+
+Box shadow:
+
+`inset 0 1px 1px rgba(255,255,255,0.1)`
+
+## Border Effect
+
+Create a `::before` pseudo-element.
+
+Position:
+
+Absolute.
+
+Inset: 0.
+
+Padding: 1.4px.
+
+Border radius: inherit.
+
+Background:
+
+`linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.05))`
+
+Use CSS masking:
+
+`-webkit-mask-composite: xor`
+
+`mask-composite: exclude`
+
+Add `pointer-events: none`.
+
+## Card Content
+
+Small label:
+
+[ INTERNATIONAL COVERAGE ]
+
+Main heading:
+
+"Intelligence Beyond Headlines"
+
+Use Instrument Serif Italic for "Intelligence".
+
+Supporting description:
+
+"Reporting on the forces, technologies, and decisions shaping global defence."
+
+Use controlled spacing.
+
+No excessive shadows.
+
+The card should resemble high-end glass optics rather than a standard frosted UI card.
+
+---
+
+# 10. FEATURED NEWS — EDITORIAL GRID
+
+Immediately after the hero, create the featured news section.
+
+## Section Label
+
+LATEST DEVELOPMENTS
+
+## Heading
+
+THE STORIES SHAPING GLOBAL DEFENCE.
+
+## Layout
+
+Use an asymmetric editorial news grid.
+
+Desktop:
+
+One large featured story occupying approximately half of the available width.
+
+Four smaller story cards arranged alongside it.
+
+Tablet:
+
+Two-column layout.
+
+Mobile:
+
+Single-column layout.
+
+## News Card Content
+
+Every article card includes:
+
+- Featured image
+- Category
+- Publication date
+- Headline
+- Optional excerpt
+- Read Article link
+
+## Visual Design
+
+Use large cinematic imagery.
+
+Dark gradients over featured image cards.
+
+Sharp typography.
+
+Subtle dividers.
+
+Minimal metadata.
+
+## Sample Article Topics
+
+Use authentic IDA stories from the reference site when accessible, such as:
+
+- BERTUĞ and EFES 2026.
+- Russia's twin-seat fifth-generation fighter.
+- ASELSAN at EFES-2026.
+- International naval cooperation.
+- Counter-UAV technology.
+
+Do not invent publication dates or article URLs.
+
+## Interactions
+
+Hover:
+
+Image scale 1.04.
+
+Heading color changes to golden-yellow.
+
+Arrow icon moves diagonally.
+
+Use transitions of 300–450ms.
+
+All article links must work.
+
+---
+
+# 11. LAND & SEA — DEFENCE DOMAINS
+
+Create a cinematic category exploration section.
+
+## Eyebrow
+
+EXPLORE OUR COVERAGE
+
+## Headline
+
+DEFENCE ACROSS EVERY DOMAIN.
+
+## Cards
+
+Create two large image cards.
+
+### Card 1
+
+LAND WARFARE
+
+Image:
+
+Modern armored military vehicles, ground operations, or advanced land defence technology.
+
+### Card 2
+
+NAVAL & MARITIME
+
+Image:
+
+Military warships, submarines, or naval operations.
+
+## Card Styling
+
+Large landscape cards.
+
+Aspect ratio: 16:10.
+
+Dark image gradients.
+
+Category title positioned bottom-left.
+
+Large uppercase typography.
+
+Golden-yellow arrow icon.
+
+Subtle border.
+
+## Hover
+
+Image gently zooms.
+
+Border highlights in golden-yellow.
+
+Arrow moves diagonally upward.
+
+On mobile, stack the cards.
+
+Use real IDA category destinations.
+
+---
+
+# 12. IDA MAGAZINES — PREMIUM EDITORIAL SHOWCASE
+
+Create a distinctive magazine showcase section.
+
+This section must feel exceptionally premium.
+
+## Eyebrow
+
+THE IDA EDITIONS
+
+## Heading
+
+EXCLUSIVE DEFENCE PUBLICATIONS.
+
+## Description
+
+"Explore international defence exhibitions, technological developments, and strategic industry insights through our exclusive magazine editions."
+
+## Magazine Editions
+
+Include actual IDA magazine editions when assets are available:
+
+- EDEX December 2025
+- DSA & NATSEC Malaysia 2026
+- SAHA EXPO Türkiye 2026
+- Other existing IDA publications
+
+## Layout
+
+Desktop:
+
+Three large magazine covers.
+
+Tablet:
+
+Two covers.
+
+Mobile:
+
+One cover.
+
+## Cover Design
+
+Use authentic magazine cover images.
+
+Preserve artwork proportions.
+
+Apply subtle realistic shadows.
+
+Add a restrained perspective effect.
+
+Display:
+
+Edition name.
+
+Year.
+
+Publication category.
+
+View Magazine CTA.
+
+## Hover Interactions
+
+Card translates upward 8px.
+
+Cover tilts very slightly.
+
+Shadow deepens.
+
+Golden-yellow accent line appears.
+
+## Slider
+
+Use a working responsive carousel.
+
+Include:
+
+Previous/Next buttons.
+
+Touch swipe.
+
+Keyboard navigation.
+
+Pagination indicators.
+
+## Magazine Viewer
+
+The existing IDA website uses DearFlip for magazine viewing.
+
+Preserve the ability to open magazines in the existing WordPress viewer or linked publication page.
+
+Do not attempt to recreate a fully functional PDF flipbook unless the necessary assets and requirements are available.
+
+CTA:
+
+VIEW ALL MAGAZINES
+
+---
+
+# 13. EXCLUSIVE INTERVIEWS — CONTINUOUS SLIDER
+
+## Eyebrow
+
+INDUSTRY LEADERS
+
+## Heading
+
+EXCLUSIVE INTERVIEWS.
+
+## Description
+
+"Conversations with the visionaries, executives, and military leaders shaping the international defence landscape."
+
+## Interview Content
+
+Include real IDA interview topics:
+
+- HAVELSAN President & CEO.
+- Pakistan Naval Chief.
+- ASELSAN CEO & President.
+- Akbar Allana of Alsons Group.
+
+## Layout
+
+Create large horizontal editorial cards.
+
+Desktop:
+
+Approximately three visible cards.
+
+Tablet:
+
+Two cards.
+
+Mobile:
+
+One card.
+
+## Card Design
+
+Interview image.
+
+Category label.
+
+Interviewee name.
+
+Role or organization.
+
+Interview headline.
+
+Read Interview CTA.
+
+## Continuous Animation
+
+Create a slow and seamless right-to-left carousel.
+
+Movement should be continuous and linear.
+
+It must remain active after page refresh.
+
+Use a stable implementation that avoids timer conflicts or Swiper initialization races.
+
+Ensure slides remain clickable.
+
+Pause motion on hover and keyboard focus.
+
+Support touch navigation.
+
+Respect reduced-motion settings.
+
+Avoid visible jumps at loop boundaries.
+
+---
+
+# 14. OUR SERVICES — EDITORIAL SERVICE CARDS
+
+## Eyebrow
+
+OUR EXPERTISE
+
+## Heading
+
+BEYOND REPORTING. DRIVING IMPACT.
+
+## Service Content
+
+Create four cards:
+
+### 01 — Digital Campaigns
+
+Strategic communication and targeted defence industry visibility.
+
+### 02 — Features & Strategic Promotion
+
+Dedicated promotional features and industry exposure.
+
+### 03 — News & Editorial Coverage
+
+Professional reporting and editorial coverage across defence sectors.
+
+### 04 — Exhibition Media Coverage
+
+Specialized reporting, interviews, and media coverage for international defence exhibitions.
+
+## Visual Design
+
+Use glass-like dark surfaces.
+
+Background:
+
+`rgba(255,255,255,0.025)`
+
+Borders:
+
+`rgba(255,255,255,0.10)`
+
+Border radius: 16px.
+
+Padding: 32px.
+
+Include:
+
+Service number.
+
+Minimal icon.
+
+Title.
+
+Description.
+
+Arrow icon.
+
+On hover:
+
+Golden-yellow border.
+
+Subtle background illumination.
+
+Minimal card lift.
+
+Maintain consistent card heights.
+
+---
+
+# 15. IDA LATEST NEWS — EDITORIAL NEWSROOM
+
+## Eyebrow
+
+LATEST INTELLIGENCE
+
+## Heading
+
+THE LATEST FROM IDA.
+
+## Layout
+
+Use a sophisticated two-column editorial design.
+
+Left:
+
+One prominent featured article.
+
+Right:
+
+Four or five compact news articles.
+
+## News Item
+
+Thumbnail.
+
+Category.
+
+Date.
+
+Headline.
+
+Arrow icon.
+
+Use thin separators.
+
+## Interaction
+
+Optional category filters:
+
+ALL
+
+AIR
+
+LAND
+
+NAVAL
+
+TECHNOLOGY
+
+GEOPOLITICS
+
+Make filters functional using the available local content data.
+
+Use real links when provided.
+
+CTA:
+
+VIEW ALL NEWS
+
+---
+
+# 16. ADVERTISE WITH IDA
+
+Create a bold, commercially focused full-width section.
+
+## Eyebrow
+
+PARTNER WITH IDA
+
+## Headline
+
+AMPLIFY YOUR PRESENCE IN THE GLOBAL DEFENCE INDUSTRY.
+
+## Supporting Copy
+
+"Connect with decision-makers, innovators, and defence industry professionals through our global media platform."
+
+## Layout
+
+Use an asymmetric split composition.
+
+Left:
+
+Large headline and descriptive text.
+
+Right:
+
+Premium advertising CTA panel or supporting visual.
+
+## Background
+
+Dark defence exhibition photography.
+
+Strong black gradient.
+
+Subtle golden illumination.
+
+## CTAs
+
+ADVERTISE WITH US
+
+EXPLORE OUR SERVICES
+
+Use an authoritative, premium visual style.
+
+Avoid generic sales graphics.
+
+---
+
+# 17. CONTACT & BUSINESS INQUIRY FORM
+
+## Eyebrow
+
+GET IN TOUCH
+
+## Headline
+
+LET'S START A CONVERSATION.
+
+## Layout
+
+Desktop:
+
+Two columns.
+
+Left:
+
+Contact information and supporting copy.
+
+Right:
+
+Form.
+
+## Form Fields
+
+Full Name.
+
+Email Address.
+
+Company / Organization.
+
+Subject.
+
+Message.
+
+Submit Button:
+
+SEND INQUIRY
+
+## Design
+
+Dark fields.
+
+Thin borders.
+
+Golden-yellow focus state.
+
+Clear placeholder text.
+
+Responsive layout.
+
+## Functionality
+
+Implement client-side validation.
+
+Show field-specific errors.
+
+Include loading states.
+
+Do not falsely report successful submission.
+
+If no backend is configured, provide a clearly labeled demonstration state and prepare a clean integration point for the existing WordPress contact form.
+
+---
+
+# 18. OUR VALUABLE PARTNERS
+
+## Eyebrow
+
+OUR NETWORK
+
+## Heading
+
+OUR VALUABLE PARTNERS.
+
+## Layout
+
+Create a premium partner-logo marquee.
+
+Use actual partner logos available on the IDA website.
+
+Do not invent companies or partnerships.
+
+## Animation
+
+Continuous horizontal movement.
+
+Smooth and seamless.
+
+No visible looping jump.
+
+Pause on hover.
+
+Respect reduced-motion preferences.
+
+Use subdued logo colors against the dark background.
+
+Show original logo colors on hover where appropriate.
+
+---
+
+# 19. NEWSLETTER SECTION
+
+## Eyebrow
+
+STAY INFORMED
+
+## Heading
+
+DEFENCE INTELLIGENCE. DELIVERED.
+
+## Description
+
+"Stay connected to the latest defence news, exclusive interviews, and international industry developments."
+
+## Form
+
+Email address input.
+
+Subscribe button.
+
+Golden-yellow CTA.
+
+Include validation and error feedback.
+
+Only show a genuine success confirmation after a successful subscription response.
+
+If no newsletter service is configured, display a clear demo state.
+
+---
+
+# 20. FOOTER
+
+Create a premium multi-column footer.
+
+## Column 1
+
+IDA logo.
+
+Brand description.
+
+Social icons.
+
+## Column 2 — Explore
+
+Home
+
+News
+
+Articles
+
+Magazines
+
+Interviews
+
+## Column 3 — Categories
+
+Acquisitions
+
+Expos
+
+Weapons
+
+Conflict
+
+Geopolitics
+
+## Column 4 — Organization
+
+About Us
+
+Contact
+
+Advertise
+
+Privacy Policy
+
+Terms of Service
+
+## Footer Bottom
+
+Copyright:
+
+© International Defence Analysis.
+
+Use the current year dynamically.
+
+Add minimal divider lines.
+
+Keep typography compact and elegant.
+
+---
+
+# 21. MOTION & INTERACTION SYSTEM
+
+Use a restrained cinematic motion language.
+
+## Animation Types
+
+Hero headline reveal.
+
+Eyebrow fade-in.
+
+Liquid glass gentle floating.
+
+Scroll-triggered section reveals.
+
+News image zoom.
+
+Button arrow movement.
+
+Card hover elevation.
+
+Interview continuous marquee.
+
+Partner logo marquee.
+
+Magazine hover tilt.
+
+## Motion Timing
+
+Button hover: 250ms.
+
+Card hover: 350ms.
+
+Section reveal: 650ms.
+
+Hero entrance: 800ms.
+
+Use smooth professional easing.
+
+Avoid exaggerated bouncing.
+
+Respect prefers-reduced-motion globally.
+
+---
+
+# 22. RESPONSIVE REQUIREMENTS
+
+Test the layout at:
+
+- 1440px desktop
+- 1280px laptop
+- 1024px tablet landscape
+- 768px tablet
+- 390px mobile
+- 320px small mobile
+
+Ensure:
+
+No horizontal overflow.
+
+Readable typography.
+
+Appropriate spacing.
+
+Working mobile navigation.
+
+Responsive cards.
+
+Functional mobile sliders.
+
+Touch-friendly controls.
+
+Proper form layouts.
+
+Consistent image ratios.
+
+No overlapping hero content.
+
+No clipped headlines.
+
+---
+
+# 23. REUSABLE REACT ARCHITECTURE
+
+Create the following components:
+
+- App
+- Header
+- MobileMenu
+- HeroSection
+- HLSBackgroundVideo
+- HeroGlassCard
+- SectionHeading
+- PrimaryButton
+- FeaturedNewsSection
+- NewsCard
+- DefenceDomainsSection
+- CategoryCard
+- MagazineSection
+- MagazineCard
+- InterviewsSection
+- InterviewCard
+- ServicesSection
+- ServiceCard
+- LatestNewsSection
+- AdvertisingSection
+- ContactSection
+- PartnersSection
+- NewsletterSection
+- Footer
+
+Separate content from components.
+
+Use typed data objects.
+
+Suggested files:
+
+```text
+src/
+├── App.tsx
+├── main.tsx
+├── components/
+│   ├── layout/
+│   ├── hero/
+│   ├── editorial/
+│   ├── magazines/
+│   ├── interviews/
+│   ├── services/
+│   └── shared/
+├── data/
+│   ├── news.ts
+│   ├── magazines.ts
+│   ├── interviews.ts
+│   └── navigation.ts
+├── hooks/
+│   ├── useHlsVideo.ts
+│   └── useReducedMotion.ts
+├── styles/
+│   └── globals.css
+└── assets/
+```
+
+Adapt the directory structure to Google AI Studio's generated project environment if necessary.
+
+---
+
+# 24. IMAGE & ASSET REQUIREMENTS
+
+Use premium cinematic defence photography.
+
+Image subjects may include:
+
+- Fighter aircraft
+- Aircraft carriers
+- Naval warships
+- Military ground vehicles
+- Advanced radar systems
+- Aerospace engineering
+- Defence exhibitions
+- Executive interviews
+- Defence technology displays
+
+Use authentic IDA images whenever possible.
+
+Do not imply unrelated stock photographs depict specific real news events.
+
+Maintain realistic color grading.
+
+Avoid excessive AI-looking imagery.
+
+Images should be sharp, clean, professionally composed, and appropriate for an authoritative publication.
+
+Implement lazy loading for below-the-fold images.
+
+Use responsive image sizes.
+
+Provide suitable fallback images.
+
+---
+
+# 25. ACCESSIBILITY & PERFORMANCE
+
+## Accessibility
+
+Use semantic HTML.
+
+Correct heading hierarchy.
+
+Accessible buttons and navigation.
+
+Keyboard-operable sliders.
+
+Visible focus states.
+
+Meaningful alt text.
+
+Accessible form labels.
+
+Appropriate color contrast.
+
+Reduced-motion support.
+
+## Performance
+
+Optimize images.
+
+Lazy-load below-the-fold sections when appropriate.
+
+Avoid unnecessary JavaScript.
+
+Prevent layout shifts.
+
+Clean up event listeners.
+
+Clean up HLS instances.
+
+Avoid unnecessary React re-renders.
+
+Ensure animation performance remains smooth.
+
+Do not animate expensive layout properties unnecessarily.
+
+---
+
+# 26. QUALITY ASSURANCE
+
+Before presenting the completed application, verify:
+
+1. All homepage sections render.
+2. The header works on desktop and mobile.
+3. The HLS video initializes or its fallback appears.
+4. No React runtime errors occur.
+5. News and category cards have appropriate links.
+6. Magazine interactions work.
+7. The interview carousel moves continuously.
+8. The services section is responsive.
+9. Contact fields validate correctly.
+10. Newsletter feedback is honest.
+11. Partner marquee behaves correctly.
+12. All buttons provide meaningful actions.
+13. Mobile layouts have no horizontal overflow.
+14. No obvious broken assets appear.
+15. Typography and colors remain consistent.
+
+If a requirement depends on an unavailable backend, external asset, or API, implement the UI and clearly identify the remaining integration.
+
+Do not claim unavailable backend functions are working.
+
+---
+
+# 27. STRICT DESIGN RESTRICTIONS
+
+Do not build a generic SaaS landing page.
+
+Do not use the CodeNest name or coding education copy.
+
+Do not use green as the main CTA accent.
+
+Do not replace IDA's golden-yellow identity.
+
+Do not use excessive neon lighting.
+
+Do not overuse glassmorphism.
+
+Do not use cartoon-style illustrations.
+
+Do not create decorative military dashboards unrelated to the editorial content.
+
+Do not invent news events, media partners, or interviews.
+
+Do not remove important existing homepage sections.
+
+Do not create placeholder buttons without meaningful behavior.
+
+Do not stop after completing the hero.
+
+Do not make every section visually identical.
+
+Maintain the authority of an international defence publication.
+
+---
+
+# 28. FINAL DEVELOPMENT INSTRUCTIONS
+
+Now develop the complete International Defence Analysis homepage.
+
+Use the existing IDA homepage as the content and information-architecture reference.
+
+Use the CodeNest design specifications as the technical inspiration for cinematic video, glass effects, grid lines, glow, and responsive interactions.
+
+Use IDA's golden-yellow, black, and dark-green colors as the brand foundation.
+
+Prioritize visual craftsmanship, editorial storytelling, responsive usability, and working frontend implementation.
+
+Build every homepage section in the specified order.
+
+Use reusable components, clean React architecture, and consistent Tailwind styling.
+
+Create a polished, cohesive experience suitable for presentation to a professional client.
+
+When finished, run the available project checks and fix build or runtime errors.
+
+**START DEVELOPING THE COMPLETE RESPONSIVE WEBSITE NOW. DO NOT RETURN ONLY A PLAN OR DESIGN EXPLANATION.**

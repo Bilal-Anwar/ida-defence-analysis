@@ -1,0 +1,6 @@
+{
+  "name": "International Defence Analysis (IDA)",
+  "description": "Independent, distinctive, and authoritative digital publication covering global defence, aerospace, naval systems, military technology, and strategic geopolitical analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

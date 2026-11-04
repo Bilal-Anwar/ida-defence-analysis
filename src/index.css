@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-yellow: #FFAF00;
+  --color-brand-black: #000000;
+  --color-brand-green: #1F4941;
+  --color-tactical-bg: #0B0F0E;
+  --color-secondary-bg: #121715;
+  --color-card-bg: #191E1B;
+  --color-elevated-surface: #222824;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A7ADA9;
+  --color-subtle-border: rgba(255, 255, 255, 0.10);
+
+  --font-barlow: "Barlow Condensed", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-serif-accent: "Instrument Serif", serif;
+}
+
+@layer base {
+  body {
+    background-color: #0B0F0E;
+    color: #FFFFFF;
+    font-family: var(--font-inter), sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Liquid Glass Floating Card from Specification */
+.liquid-glass-card {
+  background: rgba(255, 255, 255, 0.015);
+  background-blend-mode: luminosity;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.12);
+  position: relative;
+}
+
+.liquid-glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1.4px;
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.05));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Tactical Crosshairs & Grid Lines */
+.tactical-grid-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+/* Custom scrollbar for military editorial look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F0E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222824;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFAF00;
+}
