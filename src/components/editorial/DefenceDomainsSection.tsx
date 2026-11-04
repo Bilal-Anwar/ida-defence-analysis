@@ -24,7 +24,7 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
         {/* Three Large Landscape Domain Cards (16:10 aspect ratio) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card 1: LAND WARFARE */}
-          <div
+          <div data-reveal
             onClick={() => onSelectDomain('LAND')}
             className="group relative aspect-[16/10] rounded-2xl overflow-hidden bg-[#191E1B] border border-white/10 hover:border-brand-yellow transition-all duration-400 cursor-pointer shadow-xl flex flex-col justify-end"
           >
@@ -67,7 +67,7 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
           </div>
 
           {/* Card 2: NAVAL & MARITIME */}
-          <div
+          <div data-reveal
             onClick={() => onSelectDomain('NAVAL')}
             className="group relative aspect-[16/10] rounded-2xl overflow-hidden bg-[#191E1B] border border-white/10 hover:border-brand-yellow transition-all duration-400 cursor-pointer shadow-xl flex flex-col justify-end"
           >
@@ -110,7 +110,7 @@ export const DefenceDomainsSection: React.FC<DefenceDomainsSectionProps> = ({ on
           </div>
 
           {/* Card 3: AIR MILITARY */}
-          <div
+          <div data-reveal
             onClick={() => onSelectDomain('AIR')}
             className="group relative aspect-[16/10] rounded-2xl overflow-hidden bg-[#191E1B] border border-white/10 hover:border-brand-yellow transition-all duration-400 cursor-pointer shadow-xl flex flex-col justify-end"
           >

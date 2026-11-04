@@ -18,7 +18,7 @@ export const NewsCard: React.FC<NewsCardProps> = ({
 }) => {
   if (variant === 'featured') {
     return (
-      <div
+      <div data-reveal
         onClick={() => onRead(article)}
         className={`group relative rounded-2xl overflow-hidden bg-[#191E1B] border border-white/10 hover:border-brand-yellow/60 transition-all duration-400 cursor-pointer flex flex-col justify-between text-left shadow-xl ${className}`}
       >
@@ -80,7 +80,7 @@ export const NewsCard: React.FC<NewsCardProps> = ({
 
   // Standard Card in grid
   return (
-    <div
+    <div data-reveal
       onClick={() => onRead(article)}
       className={`group relative rounded-xl overflow-hidden bg-[#191E1B] border border-white/10 hover:border-brand-yellow/50 transition-all duration-350 cursor-pointer flex flex-col text-left ${className}`}
     >

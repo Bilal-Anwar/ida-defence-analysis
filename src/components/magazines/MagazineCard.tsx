@@ -10,6 +10,7 @@ interface MagazineCardProps {
 
 export const MagazineCard: React.FC<MagazineCardProps> = ({ magazine, onView, className = '' }) => (
   <button
+    data-reveal
     type="button"
     onClick={() => onView(magazine)}
     aria-label={`View ${magazine.title}`}

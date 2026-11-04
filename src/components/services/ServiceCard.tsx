@@ -10,7 +10,7 @@ interface ServiceCardProps {
 
 export const ServiceCard: React.FC<ServiceCardProps> = ({ service, className = '' }) => {
   return (
-    <article className={`group relative overflow-hidden flex flex-col rounded-2xl border border-white/10 bg-[#121916] p-6 sm:p-8 transition-colors duration-300 hover:border-brand-yellow/50 ${className}`}>
+    <article data-reveal className={`motion-card group relative overflow-hidden flex flex-col rounded-2xl border border-white/10 bg-[#121916] p-6 sm:p-8 transition-colors duration-300 hover:border-brand-yellow/50 ${className}`}>
       <div aria-hidden="true" className="absolute top-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-brand-yellow/60 to-transparent" />
       <h3 className="font-['Barlow_Condensed'] font-bold uppercase text-3xl sm:text-[34px] text-white leading-tight">{service.title}</h3>
       <p className="text-sm text-[#A7ADA9] leading-7 mt-3 max-w-xl">{service.description}</p>

@@ -20,7 +20,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <img
           src="/assets/aistudio/Joint_forces__land__sea__and_sky_481ab25e.png"
           alt="Joint forces: land, sea, and sky"
-          className="absolute inset-0 w-full h-full object-cover object-center scale-100"
+          className="hero-image-enter absolute inset-0 w-full h-full object-cover object-center scale-100"
         />
 
         {/* 44% Black Overlay */}
@@ -93,7 +93,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
       {/* Main Content Area */}
       <div className="relative z-20 max-w-[1440px] w-full mx-auto px-6 sm:px-10 lg:px-16 pt-16">
-        <div className="max-w-3xl flex flex-col items-start text-left space-y-6">
+        <div className="hero-content-enter max-w-3xl flex flex-col items-start text-left space-y-6">
           {/* Eyebrow */}
           <div className="flex items-center gap-2.5">
             <span className="w-5 h-[1.5px] bg-brand-yellow" />

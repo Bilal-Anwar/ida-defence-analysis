@@ -16,9 +16,10 @@ export const InterviewCard: React.FC<InterviewCardProps> = ({
 }) => {
   return (
     <button
+      data-reveal
       type="button"
       onClick={() => onRead(interview)}
-      className={`group relative flex w-full flex-col justify-between rounded-2xl bg-[#191E1B] border border-white/10 hover:border-brand-yellow focus-visible:outline-2 focus-visible:outline-brand-yellow overflow-hidden transition-all duration-350 cursor-pointer shadow-xl text-left select-none ${className}`}
+      className={`motion-card group relative flex w-full flex-col justify-between rounded-2xl bg-[#191E1B] border border-white/10 hover:border-brand-yellow focus-visible:outline-2 focus-visible:outline-brand-yellow overflow-hidden transition-all duration-350 cursor-pointer shadow-xl text-left select-none ${className}`}
     >
       {/* 1. Featured Image at Top */}
       <div className="relative aspect-[16/10] overflow-hidden bg-[#121715]">

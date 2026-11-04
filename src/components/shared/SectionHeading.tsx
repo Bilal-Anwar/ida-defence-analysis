@@ -42,7 +42,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
   };
 
   return (
-    <div className={`flex flex-col max-w-3xl ${alignClass} ${className}`}>
+    <div data-reveal className={`flex flex-col max-w-3xl ${alignClass} ${className}`}>
       {eyebrow && (
         <div className="flex items-center gap-2 mb-3">
           <span className="inline-block w-4 h-[1px] bg-brand-yellow" />

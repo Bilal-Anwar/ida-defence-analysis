@@ -22,8 +22,10 @@ import { NewsArticle } from './data/news';
 import { MagazineEdition, IDA_MAGAZINES } from './data/magazines';
 import { InterviewItem } from './data/interviews';
 import { ServiceItem } from './data/services';
+import { useScrollReveal } from './hooks/useScrollReveal';
 
 export default function App() {
+  useScrollReveal();
   // Modal states
   const [selectedArticle, setSelectedArticle] = useState<NewsArticle | null>(null);
   const [selectedMagazine, setSelectedMagazine] = useState<MagazineEdition | null>(null);
@@ -55,6 +57,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#0B0F0E] text-[#FFFFFF] font-['Inter'] selection:bg-brand-yellow selection:text-[#000000] relative">
+      <div className="reading-progress" aria-hidden="true" />
       {/* Global Header */}
       <Header
         onOpenSearch={() => setSearchOpen(true)}
